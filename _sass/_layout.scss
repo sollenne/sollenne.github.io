@@ -1,54 +1,5 @@
 body {
-    background:url('/img/body_bg.png');
     padding-top:50px;
-
-    // ==========================================================================
-    // FONTS
-    // ==========================================================================
-    $font-marker: 'Permanent Marker';
-    $font-mensch: 'Mensch';
-
-    h1,h2,h3,h4,h5,h6,
-    .font-marker { font-family: $font-marker; }
-    .font-mensch { font-family: $font-mensch; }
-
-    // ==========================================================================
-    // EFFECTS
-    // ==========================================================================
-    .purple-grad {
-        background: linear-gradient(90deg,#AA076B 10%,#61045F 90%);
-        -webkit-text-fill-color: transparent;
-    }
-
-    .mask {
-        -webkit-background-clip: text;
-        -webkit-mask-image: url(/img/knockout.png);
-        -o-mask-image: url(/img/knockout.png);
-        -moz-mask-image: url(/img/knockout.png);
-        -ms-mask-image: url(/img/knockout.png);
-        mask-image: url(/img/knockout.png);
-    }
-    
-    // ==========================================================================
-    // HEADER
-    // ==========================================================================
-    header {
-        .navbar-brand {
-            letter-spacing:0.05em;
-            font-family: $font-marker;
-        }
-    }
-
-    // ==========================================================================
-    // HERO
-    // ==========================================================================
-    .hero {
-       
-    }
-    
-    
-
-
-
 }
+
 

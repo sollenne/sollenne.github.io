@@ -1,3 +1,6 @@
 $(document).ready(function() {
-	$("h1.title").fitText();
+
+	// fitText
+	$(".fittext").fitText();
+
 });
