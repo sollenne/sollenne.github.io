@@ -12,7 +12,7 @@ layout: default
                         <div class="col-xs-12">
                             <h2>{{p.title}}</h2>
                         </div>
-                        {% include lp_{{p.title}}.html %}
+                        {% include lp_{{p.title | downcase }}.html %}
                     </div>
                 </div>
             </section>
