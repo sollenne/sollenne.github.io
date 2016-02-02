@@ -8,7 +8,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
+			<a class="navbar-brand" href="{{ site.baseurl }}/"><i class="ion-ios-star"></i>{{ site.title }}</a>
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,8 +16,8 @@
 			<ul class="nav navbar-nav navbar-right">
 				{% for p in site.pages %}
 					{% if p.title %}
-						<li {% if p.url == page.url %}class="active"{% endif %} >
-							<a href="{{ p.url }}">{{ p.title }}</a>
+						<li>
+							<a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a>
 						</li>
 					{% endif %}
 				{% endfor %}

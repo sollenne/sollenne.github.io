@@ -1,6 +1,65 @@
+@mixin transition($feature: all, $time: 0.3s) {
+  -webkit-transition: $feature $time;
+  -moz-transition: $feature $time;
+  -ms-transition: $feature $time;
+  -o-transition: $feature $time;
+  transition: $feature $time;
+}
+
+
 body {
-  font-family:"Open Sans", Helvetica, Arial, sans-serif;
-  padding-top:50px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  padding-top: 50px;
+  background: url("/img/header.jpg") center center no-repeat fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  min-height: 2000px;
+
+  // HEADER
+  header.navbar {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.3);
+    @include transition();
+
+    a {
+      color: rgba(255, 255, 255, 0.7) !important;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.9em;
+      @include transition();
+
+      &:hover,
+      &.active  {
+        color: rgba(255, 255, 255, 1) !important;
+        @include transition();
+      }
+
+      &.navbar-brand {
+        font-size:1.5em;
+      }
+    }
+    &.shrink {
+      background-color: #fff;
+      border-color: rgba(34, 34, 34, 0.5);
+      @include transition();
+
+       a {
+         color: #222 !important;
+         @include transition();
+
+         &:hover,
+         &.active  {
+           color: #F05F40 !important;
+           @include transition();
+         }
+
+         &.navbar-brand {
+           color: #F05F40 !important;
+           font-size: 14px;
+         }
+       }
+    }
+  } // END HEADER
 
 }
 
