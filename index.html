@@ -3,75 +3,19 @@ layout: default
 ---
 
 <div class="home">
-
-  
-
-
-
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-
-
-  <section id="About">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>About</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Blog">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Blog</h2>
-        </div>
-        <div class="col-xs-12">
-          <ul class="post-list">
-            {% for post in site.posts %}
-            <li>
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-              <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Services">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Services</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Portfolio</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="Contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>Contact</h2>
-        </div>
-      </div>
-    </div>
-  </section>
-
+    {% assign pages = site.pages | sort:"weight"  %}
+    {% for p in pages %}
+        {% if p.title %}
+            <section id="{{p.title}}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>{{p.title}}</h2>
+                        </div>
+                        {% include lp_{{p.title}}.html %}
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+    {% endfor %}
 </div>

@@ -15,6 +15,11 @@ body, html, {
   height: 100%;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-weight:700;
+  text-transform: uppercase;
+}
+
 ::selection {
   background: $Black; /* WebKit/Blink Browsers */
 }
@@ -117,8 +122,8 @@ body {
     }
 
     &#Contact {
-      background: $Black;
-      color: $White;
+      background: $White;
+      color: $Black;
     }
   }
 
