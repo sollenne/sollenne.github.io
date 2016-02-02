@@ -17,23 +17,67 @@ layout: default
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 
-  <section id="About">About</section>
-  <section id="Blog">
-    <h1 class="page-heading">Posts</h1>
-
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-      {% endfor %}
-    </ul>
+  <section id="About">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>About</h2>
+        </div>
+      </div>
+    </div>
   </section>
-  <section id="Portfolio">Portfolio</section>
-  <section id="Services">Services</section>
-  <section id="Contact">Contact</section>
+
+  <section id="Blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Blog</h2>
+        </div>
+        <div class="col-xs-12">
+          <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+              <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Portfolio</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Services">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Services</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Contact</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
