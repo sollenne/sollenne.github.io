@@ -42,7 +42,8 @@ body {
       font-size: 0.9em;
       @include transition();
       &:hover,
-      &.active  {
+      &.active,
+      &.almost-active  {
         color: rgba(255, 255, 255, 1) !important;
         @include transition();
       }
@@ -58,7 +59,8 @@ body {
          color: $Black !important;
          @include transition();
          &:hover,
-         &.active  {
+         &.active,
+         &.almost-active  {
            color: $PrimaryColor !important;
            @include transition();
          }
@@ -96,11 +98,34 @@ body {
 
     &#About {
       background: $PrimaryColor;
+      color: $White;
     }
 
     &#Blog {
       background: $White;
+      color: $Black;
     }
+
+    &#Services {
+      background: $Black;
+      color: $White;
+    }
+
+    &#Portfolio {
+      background: $Black;
+      color: $White;
+    }
+
+    &#Contact {
+      background: $Black;
+      color: $White;
+    }
+  }
+
+  footer {
+    padding:50px 0;
+    background: $White;
+    color: $Black;
   }
 }
 
