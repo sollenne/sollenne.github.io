@@ -5,17 +5,24 @@ layout: default
 <div class="home">
 
   <div class="hero text-center">
-      <div class="container">
-          <h1 class="fittext">Lorem ipsum dolor sit ametio.</h1>
+      <div class="container" data-0="opacity:1" data-300="opacity:0">
+          <h1 class="fittext text-uppercase">Lorem ipsum dolor sit ametio.</h1>
       </div>
   </div>
 
   
 
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+
+
+  <section id="About">About</section>
+  <section id="Blog">
+    <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -23,9 +30,10 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+      {% endfor %}
+    </ul>
+  </section>
+  <section id="Portfolio">Portfolio</section>
+  <section id="Services">Services</section>
+  <section id="Contact">Contact</section>
 </div>

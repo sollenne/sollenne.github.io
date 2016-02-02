@@ -17,10 +17,9 @@
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   padding-top: 50px;
-  background: url("/img/header.jpg") center center no-repeat fixed;
+  background: url("/img/138H.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
-  min-height: 2000px;
 
   // HEADER
   header.navbar {
@@ -79,6 +78,19 @@ body {
       }
     }
   }// END HERO AREA - HOME PAGE
+
+
+  section {
+    min-height:500px;
+
+    &#About {
+      background: #F05F40;
+    }
+
+    &#Blog {
+      background: #fff;
+    }
+  }
 }
 
 

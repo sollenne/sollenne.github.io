@@ -20,7 +20,30 @@ $(document).ready(function() {
         }
     });
 
+    // Make Intro Height of viewport
     var _height = $(window).height();
     $('.hero').height(_height);
+
+
+    // Custom Scroll to div on Home Page
+    $(function() {
+        $("a[href*='#']:not([href='#'])").click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 750);
+                    return false;
+                }
+            }
+        });
+    });
+
+    // Parallax on Home Page
+    skrollr.init({
+        forceHeight: false
+    });
 
 });
