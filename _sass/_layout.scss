@@ -1,3 +1,8 @@
+//Vars
+$PrimaryColor: #F05F40 !default;
+$White: #fff !default;
+$Black: #222 !default;
+
 @mixin transition($feature: all, $time: 0.3s) {
   -webkit-transition: $feature $time;
   -moz-transition: $feature $time;
@@ -7,10 +12,10 @@
 }
 
 ::selection {
-  background: #000; /* WebKit/Blink Browsers */
+  background: $Black; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #000; /* Gecko Browsers */
+  background: $Black; /* Gecko Browsers */
 }
 
 
@@ -42,19 +47,19 @@ body {
       }
     }
     &.shrink {
-      background-color: #fff;
+      background-color: $White;
       border-color: rgba(34, 34, 34, 0.5);
       @include transition();
        a {
-         color: #222 !important;
+         color: $Black !important;
          @include transition();
          &:hover,
          &.active  {
-           color: #F05F40 !important;
+           color: $PrimaryColor !important;
            @include transition();
          }
          &.navbar-brand {
-           color: #F05F40 !important;
+           color: $PrimaryColor !important;
            font-size: 14px;
          }
        }
@@ -63,12 +68,12 @@ body {
 
   // HERO AREA - HOME PAGE
   .hero {
-    width:100%;
-    color:#fff;
+    width: 100%;
+    color: $White;
     position: relative;
 
     .container {
-      height:100%;
+      height: 100%;
       h1 {
         position: relative;
         top: 30%;
@@ -85,11 +90,11 @@ body {
     padding:50px 0;
 
     &#About {
-      background: #F05F40;
+      background: $PrimaryColor;
     }
 
     &#Blog {
-      background: #fff;
+      background: $White;
     }
   }
 }
