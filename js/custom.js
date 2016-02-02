@@ -1,7 +1,7 @@
-$(document).ready(function() {
+// fitText
+$(".fittext").fitText();
 
-	// fitText
-	$(".fittext").fitText();
+$(document).ready(function() {
 
     // Animate Header
     var _header = $('header');

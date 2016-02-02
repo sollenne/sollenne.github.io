@@ -11,6 +11,10 @@ $Black: #222 !default;
   transition: $feature $time;
 }
 
+body, html, {
+  height: 100%;
+}
+
 ::selection {
   background: $Black; /* WebKit/Blink Browsers */
 }
@@ -69,6 +73,7 @@ body {
   // HERO AREA - HOME PAGE
   .hero {
     width: 100%;
+    min-height: 100%;
     color: $White;
     position: relative;
 
