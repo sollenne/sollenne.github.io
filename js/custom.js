@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// fitText
 	$(".fittext").fitText();
 
-    // animate header
+    // Animate Header
     var _header = $('header');
     $(function(){
         $(window).scroll(function() {
@@ -19,5 +19,8 @@ $(document).ready(function() {
             return window.pageYOffset || document.documentElement.scrollTop;
         }
     });
+
+    var _height = $(window).height();
+    $('.hero').height(_height);
 
 });
