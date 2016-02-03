@@ -1,5 +1,5 @@
 //Vars
-$PrimaryColor: #F05F40 !default;
+$PrimaryColor: #00C775 !default;
 $White: #fff !default;
 $Black: #222 !default;
 
@@ -83,12 +83,26 @@ body {
     min-height: 100%;
     color: $White;
     position: relative;
+    background: rgba(0,0,0,0.3);
+    margin-top:-50px;
 
     .container {
       height: 100%;
       h1 {
         position: relative;
-        top: 30%;
+        top: 40%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .logo {
+        background: url("/img/sollenne.png") center center no-repeat;
+        -webkit-background-size:contain;
+        background-size:contain;
+        height:100%;
+        width:100%;
+        position: relative;
+        top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -99,7 +113,7 @@ body {
 
   section {
     min-height:500px;
-    padding:50px 0;
+    padding:72px 0;
 
     &#about {
       background: $PrimaryColor;

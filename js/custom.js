@@ -1,5 +1,6 @@
 // fitText
-$(".fittext").fitText();
+$(".fittext").fitText(1.2, { minFontSize: '20px', maxFontSize: '65px' });
+
 
 $(document).ready(function() {
 
