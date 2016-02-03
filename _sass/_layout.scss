@@ -39,41 +39,31 @@ body {
   header.navbar {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0);
-    @include transition();
     a {
-      color: rgba(255, 255, 255, 0.7) !important;
       text-transform: uppercase;
       font-weight: 700;
       font-size: 0.9em;
-      @include transition();
-      &:hover,
-      &.active,
-      &.almost-active  {
-        color: rgba(255, 255, 255, 1) !important;
-        @include transition();
+
+      &.skrollable-between {
+        &:hover {
+          color: rgba(255, 255, 255, 1) !important;
+        }
+        &.active,
+        &.almost-active {
+          color: rgba(255, 255, 255, 0.7) !important;
+          &:hover {
+            color: rgba(255, 255, 255, 1) !important;
+          }
+        }
       }
-      &.navbar-brand {
-        font-size:1.5em;
+
+      &.skrollable-after {
+        &:hover,
+        &.active,
+        &.almost-active {
+          color: rgba(0, 199, 117, 1) !important;
+        }
       }
-    }
-    &.shrink {
-      background-color: $White;
-      border-color: rgba(34, 34, 34, 0.5);
-      @include transition();
-       a {
-         color: $Black !important;
-         @include transition();
-         &:hover,
-         &.active,
-         &.almost-active  {
-           color: $PrimaryColor !important;
-           @include transition();
-         }
-         &.navbar-brand {
-           color: $PrimaryColor !important;
-           font-size: 14px;
-         }
-       }
     }
   } // END HEADER
 
