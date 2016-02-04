@@ -18,7 +18,7 @@
 				{% for p in pages %}
 					{% if p.title %}
 						<li>
-							<a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title | downcase }}" data-0="color:rgba(255,255,255,0.7)" data-100="color:rgba(34,34,34,1)">{{ p.title }}</a>
+							<a  {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title | downcase }}" data-0="color:rgba(255,255,255,0.7)" data-100="color:rgba(34,34,34,1)">{{ p.title }}</a>
 						</li>
 					{% endif %}
 				{% endfor %}

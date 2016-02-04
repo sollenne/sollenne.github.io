@@ -1,39 +1,12 @@
-// fitText
-$(".fittext").fitText(1.2, { minFontSize: '20px', maxFontSize: '65px' });
-
-
 $(document).ready(function() {
-
-    // Animate Header
-    var _header = $('header');
 
     // Make Intro Height of viewport
     var _height = $(window).height();
     $('.hero').height(_height);
 
-
-    // Custom Scroll to div on Home Page
-    $(function() {
-        var _navClicked = $("a[href*='#']:not([href='#'])");
-        _navClicked.click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $(this).addClass('almost-active');
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 750, function() {
-                        _navClicked.removeClass('almost-active');
-                    });
-                    return false;
-                }
-            }
-        });
-    });
-
-    // Active Nav on Scroll
+     //Active Nav on Scroll
     var _sections = $('section')
+        , _header = $('header')
         , _header_height = _header.outerHeight();
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
@@ -51,11 +24,25 @@ $(document).ready(function() {
         });
     });
 
-
-
     // Parallax on Home Page
-    skrollr.init({
+    var s = skrollr.init({
         forceHeight: false
     });
-
+    skrollr.menu.init(s, {
+        animate: true,
+        easing: 'swing',
+        scale: 2,
+        duration: function(currentTop, targetTop) {
+            return Math.abs(currentTop - targetTop) / 1.5;
+        },
+        //handleLink: function(link) {
+        //    return 400;//Hardcoding 400 doesn't make much sense.
+        //},
+        complexLinks: false,
+        change: function(newHash, newTopPosition) {
+            //Do stuff
+        },
+        //Add hash link (e.g. `#foo`) to URL or not.
+        updateUrl: false //defaults to `true`.
+    });
 });
