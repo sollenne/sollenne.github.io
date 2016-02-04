@@ -34,6 +34,22 @@ body {
   background: url("/img/138H.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
+  
+  &.post {
+    background: $White;
+
+    header.navbar {
+
+      a.skrollable-between,
+      a.skrollable-after  {
+        color: $Black !important;
+
+        &:hover {
+          color: $PrimaryColor !important;
+        }
+      }
+    }
+  }
 
   // HEADER
   header.navbar {

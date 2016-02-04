@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
-  <body id="top">
-
-
+  <body id="top" {% if page.slug %} class="post"{% endif %}">
     {% include header.html %}
     <div id="skrollr-body">
-    {% include hero.html %}
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      {% if page.url == "/" %}
+        {% include hero.html %}
+      {% endif %}
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
       </div>
-    </div>
-
-    {% include footer.html %}
-
+      {% include footer.html %}
     </div>
   </body>
-
 </html>
