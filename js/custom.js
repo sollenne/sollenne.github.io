@@ -45,4 +45,8 @@ $(document).ready(function() {
         //Add hash link (e.g. `#foo`) to URL or not.
         updateUrl: false //defaults to `true`.
     });
+
+    var _footer = $('footer');
+    $('#skrollr-body').css({'margin-bottom': - _footer.outerHeight()});
+    $('<style>#skrollr-body:after{height:' + _footer.outerHeight() +'px}</style>').appendTo('head');
 });
