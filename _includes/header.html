@@ -16,9 +16,10 @@
 			<ul class="nav navbar-nav navbar-right">
 				{% assign pages = site.pages | sort:"weight"  %}
 				{% for p in pages %}
-					{% if p.title %}
+					{% if p.weight %}
 						<li>
-<a href="{% if page.url != "/" %}{% if p.title == "Blog" or  p.title == "Portfolio" %}/{{ p.title | downcase }}{% else %}/#{{ p.title | downcase }}{% endif %}{% else %}#{{ p.title | downcase }}{% endif %}"
+<a href="{% if page.url != "/" %}{% if p.url == "/blog/" or  p.title == "Portfolio" %}/{{ p.title | downcase }}{% elsif p.title == "Blog" and p.url != "/blog/" %}{% else %}/#{{ p.title | downcase }}{% endif %}{% else %}{% if p.title == "Blog" and p.url != "/blog/" %}{% else %}#{{ p.title | downcase }}{% endif %}{% endif %}
+							"
                                 data-0="color:rgba(255,255,255,0.7)"
                                 data-100="color:rgba(34,34,34,1)">
                                 {{ p.title }}
@@ -30,3 +31,32 @@
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </header>
+
+
+{% assign pages = site.pages | sort:"weight"  %}
+	{% for p in pages %}
+		{% if p.weight %}
+
+			{% if page.url != "/" %}
+				{% if p.url == "/blog/" or  p.title == "Portfolio" %}
+					/{{ p.title | downcase }}
+				{% elsif p.title == "Blog" and p.url != "/blog/" %}
+
+				{% else %}
+					/#{{ p.title | downcase }}
+				{% endif %}
+
+
+			{% else %}
+				{% if p.title == "Blog" and p.url != "/blog/" %}
+				{% else %}
+					{{ p.title | downcase }}
+				{% endif %}
+			{% endif %}
+
+		{% endif %}
+	{% endfor %}
+
+
+
+

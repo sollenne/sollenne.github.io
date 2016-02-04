@@ -6,14 +6,16 @@ active: home
 <div class="home">
     {% assign pages = site.pages | sort:"weight"  %}
     {% for p in pages %}
-        {% if p.title %}
+        {% if p.weight %}
             <section id="{{p.title | downcase }}" data-menu-offset="-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
                             <h2 class="sr-only">{{p.title}}</h2>
                         </div>
+
                         {% include lp_{{p.title | downcase }}.html %}
+
                     </div>
                 </div>
             </section>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body id="top" {% if page.slug or page.title %}class="not-home"{% endif %}>
+  <body id="top" {% if page.active != "home" %}class="not-home"{% endif %}>
     {% include header.html %}
     <div id="skrollr-body">
       {% if page.url == "/" %}
