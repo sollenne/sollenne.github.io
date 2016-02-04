@@ -1,16 +1,8 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
-        {{ site.title }}
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          {% if site.github_username %}
-            {% include icon-github.html username=site.github_username %}
-          {% endif %}
-          {% if site.twitter_username %}
-            {% include icon-twitter.html username=site.twitter_username %}
-          {% endif %}
-          {{ site.description }}
+      <div class="col-xs-12 copyright text-muted text-center small">
+        Copyright &copy; {{ site.time | date: '%Y' }} Rich Sollenne, {{ site.title }}.com. All Rights reserved.
       </div>
     </div>
   </div>

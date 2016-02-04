@@ -103,7 +103,7 @@ body {
 
   section {
     min-height:500px;
-    padding:72px 0;
+    padding:33px 0;
 
     &#about {
       background: $PrimaryColor;
@@ -111,13 +111,13 @@ body {
     }
 
     &#blog {
-      background: $White;
-      color: $Black;
+      background: $Black;
+      color: $White;
     }
 
     &#services {
-      background: $Black;
-      color: $White;
+      background: $White;
+      color: $Black;
     }
 
     &#portfolio {
@@ -136,6 +136,20 @@ body {
     background: $White;
     color: $Black;
   }
+
+  ul.social {
+    display: block;
+    width: 100%;
+
+    li {
+      a {
+        font-size:3em;
+        color: rgba(255,255,255,0.7);
+      }
+    }
+  }
+
+
 }
 
 

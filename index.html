@@ -6,7 +6,7 @@ layout: default
     {% assign pages = site.pages | sort:"weight"  %}
     {% for p in pages %}
         {% if p.title %}
-            <section id="{{p.title | downcase }}">
+            <section id="{{p.title | downcase }}" data-menu-offset="-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
