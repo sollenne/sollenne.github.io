@@ -2,8 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-12-29 20:57:41 -0600
-categories: jekyll update
-permalink: welcome_to_jekyll
+categories: jekyll
+permalink: /blog/:categories/:title
 slug: jekyll
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
