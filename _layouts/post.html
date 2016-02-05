@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: True
 ---
 <div class="container">
   <div class="row">
@@ -50,6 +49,7 @@ comments: True
                 <p id="post-meta">Posted {{ category_content }}{{ tags_content }}</p>
             </div>
         </article>
+        {% include comments.html %}
     </div>
   </div>
 </div>
