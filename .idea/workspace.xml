@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afbbf862-c3c9-4396-b872-d103b51aee05" name="Default" comment="testing">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/index.html" afterPath="$PROJECT_DIR$/blog/index.html" />
     </list>
     <ignored path="sollenne.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="post.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_layouts/post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0">
+            <state vertical-scroll-proportion="10.25">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -56,11 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8">
+            <state vertical-scroll-proportion="0.0">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21978022">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -127,9 +137,9 @@
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_posts/2014-04-11-opensourced-minddust-com.html" />
-        <option value="$PROJECT_DIR$/blog/index.html" />
         <option value="$PROJECT_DIR$/_layouts/blog_by_category.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/blog/index.html" />
       </list>
     </option>
   </component>
@@ -703,16 +713,16 @@
       <workItem from="1454351819196" duration="11186000" />
       <workItem from="1454403296927" duration="35672000" />
       <workItem from="1454577969193" duration="3253000" />
-      <workItem from="1454606675658" duration="12500000" />
+      <workItem from="1454606675658" duration="12835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65187000" />
+    <option name="totallyTimeSpent" value="65522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -720,7 +730,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953367" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.70881224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23627076" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26967096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1141,14 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0">
-          <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/tag/django.html">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
@@ -1237,16 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2013-12-31-django-spaceless-with-preserved-pre-formatting.html">
       <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
@@ -1309,8 +1301,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8">
+        <state vertical-scroll-proportion="0.0">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.25">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#article#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21978022">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
           <folding />
         </state>
       </provider>
