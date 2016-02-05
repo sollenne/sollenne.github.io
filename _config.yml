@@ -6,7 +6,7 @@ highlighter: rouge
 markdown: kramdown
 permalink: /post/:title
 paginate: 5
-paginate_path: '/post/:num'
+paginate_path: '/blog/:num'
 excerpt_separator: "\n\n\n"
 
 title: Sollenne
