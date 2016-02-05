@@ -1,0 +1,16 @@
+
+- page: Blog
+  name: blog
+  prefix: '/'
+
+- page: Services
+  name: services
+  prefix: '/#'
+
+- page: Portfolio
+  name: portfolio
+  prefix: '/'
+
+- page: Contact
+  name: contact
+  prefix: '/#'

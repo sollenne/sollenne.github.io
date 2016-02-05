@@ -4,21 +4,19 @@ active: home
 ---
 
 <div class="home">
-    {% assign pages = site.pages | sort:"weight"  %}
+    {% assign pages = site.data.pages %}
     {% for p in pages %}
-        {% if p.weight %}
-            <section id="{{p.title | downcase }}" data-menu-offset="-50">
+            <section id="{{p.name | downcase }}" data-menu-offset="-50">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12">
-                            <h2 class="sr-only">{{p.title}}</h2>
+                            <h2 class="sr-only">{{p.name}}</h2>
                         </div>
 
-                        {% include lp_{{p.title | downcase }}.html %}
+                        {% include lp_{{p.name | downcase }}.html %}
 
                     </div>
                 </div>
             </section>
-        {% endif %}
     {% endfor %}
 </div>
