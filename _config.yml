@@ -1,12 +1,12 @@
 # Gems
 gems: [jekyll-paginate]
 
-timezone: Europe/Berlin
-highlighter: pygments
+timezone: US/Central
+highlighter: rouge
 markdown: kramdown
 permalink: /post/:title
 paginate: 5
-paginate_path: '/blog/:num'
+paginate_path: '/post/:num'
 excerpt_separator: "\n\n\n"
 
 title: Sollenne
