@@ -13,7 +13,7 @@ title: Sollenne
 email: rich@sollenne.com
 description: > # ...
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.sollenne.com" # the base hostname & protocol for your site
+url: "http://sollenne.com" # the base hostname & protocol for your site
 twitter_username: richsollenne
 github_username:  sollenne
 
