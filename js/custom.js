@@ -49,4 +49,9 @@ $(document).ready(function() {
     var _footer = $('footer');
     $('#skrollr-body').css({'margin-bottom': - _footer.outerHeight()});
     $('<style>#skrollr-body:after{height:' + _footer.outerHeight() +'px}</style>').appendTo('head');
+
+    $(".post-title").slabText({
+        // Don't slabtext the headers if the viewport is under 380px
+        "viewportBreakpoint":380
+    });
 });

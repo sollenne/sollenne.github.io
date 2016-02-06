@@ -178,9 +178,11 @@ body {
       .post-header {
         padding: 21px 0;
         h1 {
-          background: $Black;
-          color: $White;
-          display: inline-block;
+          text-align: center;
+          //background: $Black;
+          //color: $White;
+          margin:0 !important;
+          padding:0 !important;
           padding: 10px 15px;
           margin-bottom: 0;
         }
@@ -192,3 +194,31 @@ body {
 }
 
 
+.slabtexted .slabtext {
+  display:-moz-inline-box;
+  display:inline-block;
+  white-space:nowrap
+}
+.slabtextinactive .slabtext {
+  display:inline;
+  white-space:normal;
+  font-size:1em !important;
+  letter-spacing:inherit !important;
+  word-spacing:inherit !important;
+  *letter-spacing:0 !important;
+  *word-spacing:0 !important;
+}
+.slabtextdone .slabtext {
+  display:block;
+  font-family:'League Gothic', "Impact", Charcoal, Arial Black, Gadget, Sans serif;
+  text-transform: uppercase;
+  line-height:1;
+  color:#222;
+  font-size:300%;
+  font-weight:normal;
+}
+.amp  {
+  font-family:Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+  font-style:italic;
+  font-weight:lighter;
+}
