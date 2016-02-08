@@ -56,4 +56,15 @@ $(document).ready(function() {
     $('<style>#skrollr-body:after{height:' + _footer.outerHeight() +'px}</style>').appendTo('head');
 
 
+    var editable = true; // set a flag
+    setInterval(function() {
+        var disqusHeight = $('#dsq-app2').height();
+        if ( disqusHeight > 0 ) {
+            if (editable) {
+                editable = false;
+                s.refresh();
+            }
+        }
+    }, 100);
+
 });
