@@ -80,8 +80,8 @@
       <file leaf-file-name="2016-02-05-the-first-post.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2016-02-05-the-first-post.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3835022">
-              <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.79160637">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -816,7 +816,7 @@
       <workItem from="1454403296927" duration="35672000" />
       <workItem from="1454577969193" duration="3253000" />
       <workItem from="1454606675658" duration="24643000" />
-      <workItem from="1454960393238" duration="2585000" />
+      <workItem from="1454960393238" duration="2841000" />
     </task>
     <task id="LOCAL-00001" summary="removed other blogs. added my first.">
       <created>1454698399218</created>
@@ -842,15 +842,21 @@
       <option name="project" value="LOCAL" />
       <updated>1454962168339</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix typos per Ryan">
+      <created>1455041179659</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1455041179659</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79915000" />
+    <option name="totallyTimeSpent" value="80171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-236" width="1920" height="1057" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -858,7 +864,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23005182" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23005182" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23626943" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -920,7 +926,8 @@
     <MESSAGE value="added post excerpt_seperator for blog list page" />
     <MESSAGE value="I changed too much last time. Incremental changes required" />
     <MESSAGE value="fix disqus dynamic loading" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix disqus dynamic loading" />
+    <MESSAGE value="fix typos per Ryan" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix typos per Ryan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1406,8 +1413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2016-02-05-the-first-post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3835022">
-          <caret line="15" column="77" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.79160637">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding />
         </state>
       </provider>
