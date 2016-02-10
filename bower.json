@@ -1,0 +1,23 @@
+{
+  "name": "sollenne.com",
+  "homepage": "http://sollenne.com",
+  "authors": [
+    "sollenne <rich@sollenne.com>"
+  ],
+  "description": "site for rich sollenne",
+  "main": "",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "simple-jekyll-search": "~1.1.1"
+  }
+}

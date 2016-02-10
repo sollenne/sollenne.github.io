@@ -1,6 +1,19 @@
 
 {% if site.posts.size > 0 %}
 <div class="list-group">
+
+
+    <!-- Html Elements for Search -->
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="search...">
+        <ul id="results-container"></ul>
+    </div>
+
+    <!-- Script pointing to jekyll-search.js -->
+    <script src="{{ site.baseurl }}/bower_components/simple-jekyll-search/dest/jekyll-search.js"
+            type="text/javascript"></script>
+
+
     {% for post in site.posts limit: 10 %}
     <a href="{{ post.url }}" class="list-group-item">
         <h4 class="list-group-item-heading">{{ post.title }}<small> &ndash; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></small></h4>
