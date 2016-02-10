@@ -1,0 +1,15 @@
+<nav id="my-menu">
+    <ul>
+        <li>
+            <a href="/">{{ site.title }}</a>
+        </li>
+        {% assign pages = site.data.pages %}
+        {% for p in pages %}
+        <li>
+            <a href="/{{ p.name }}">{{ p.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
+
+

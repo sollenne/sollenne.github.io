@@ -1,4 +1,17 @@
 $(document).ready(function() {
+    $("#my-menu").mmenu({
+        "navbars": [
+            {
+                "position": "bottom",
+                "content": [
+                    "<a class='fa fa-envelope' href='#/'></a>",
+                    "<a class='fa fa-twitter' href='#/'></a>",
+                    "<a class='fa fa-facebook' href='#/'></a>"
+                ]
+            }
+        ]
+    });
+
 
     // Make Intro Height of viewport
     var _height = $(window).height();
