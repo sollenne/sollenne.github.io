@@ -86,4 +86,6 @@ $(document).ready(function() {
         json: '/search.json',
     })
 
+    $('#my-menu').css({'display':''});
+
 });
