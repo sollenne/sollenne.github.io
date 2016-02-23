@@ -36,10 +36,17 @@ h1,h2,h3,h4,h5,h6 {
 
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight:300;
+  -moz-osx-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   background: url("/img/138H.jpg") center center no-repeat fixed;
   -webkit-background-size: cover;
   background-size: cover;
+
+  .row {
+    margin-left:0;
+    margin-right:0;
+  }
 
   &.home {
     padding-top:50px;
@@ -130,6 +137,8 @@ body {
   section {
     min-height:500px;
     padding:33px 0;
+    position: relative;
+    z-index:0;
 
     &#about {
       background: $PrimaryColor;
@@ -137,7 +146,7 @@ body {
     }
 
     &#blog {
-      background: $Black;
+      background: #e1e3e4;
       color: $White;
     }
 
@@ -193,7 +202,45 @@ body {
     }
   }
 
+  
   .blog-post {
+    height:409px;
+    background:#FFF;
+    position: relative;
+    display:block;
+
+    &:before,
+    &:after
+    {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      bottom: 15px;
+      left: 10px;
+      width: 50%;
+      top: 80%;
+      max-width:300px;
+      background: #777;
+      -webkit-box-shadow: 0 15px 10px #777;
+      -moz-box-shadow: 0 15px 10px #777;
+      box-shadow: 0 15px 10px #777;
+      -webkit-transform: rotate(-3deg);
+      -moz-transform: rotate(-3deg);
+      -o-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+      transform: rotate(-3deg);
+    }
+    &:after
+    {
+      -webkit-transform: rotate(3deg);
+      -moz-transform: rotate(3deg);
+      -o-transform: rotate(3deg);
+      -ms-transform: rotate(3deg);
+      transform: rotate(3deg);
+      right: 10px;
+      left: auto;
+    }
+
 
   }
 
