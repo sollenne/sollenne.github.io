@@ -1,6 +1,6 @@
 
 {% if site.posts.size > 0 %}
-<div class="list-group">
+<div class="list-group row">
 
 
     <!-- Html Elements for Search -->
@@ -15,8 +15,10 @@
 
 
     {% for post in site.posts limit: 10 %}
-    <a href="{{ post.url }}" class="list-group-item">
-        <h4 class="list-group-item-heading">{{ post.title }}<small> &ndash; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></small></h4>
+    <a href="{{ post.url }}" class="blog-post col-xs-12 col-sm-3">
+        <div class="well">
+            <h4 class="">{{ post.title }}<small> &ndash; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></small></h4>
+        </div>
     </a>
     {% endfor %}
 </div>
