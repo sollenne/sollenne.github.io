@@ -276,3 +276,130 @@ body {
   font-style:italic;
   font-weight:lighter;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+
+// Floating card size
+$fc-width: 270px;
+$fc-height: 410px;
+
+// Border size and dasharray calculation
+$border-width: $fc-width - 32px;
+$border-height: $fc-height - 32px;
+$border-dasharray: ($border-width * 2) + ($border-height * 2);
+
+// Colors
+$color-gold: #b0976d;
+$color-border: #777777;
+
+html {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.fc {
+  position: relative;
+  width: $fc-width;
+  height: $fc-height;
+  perspective: 1000px;
+  display: block;
+
+  &__wrapper {
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+
+    &::after {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 23px;
+      content: '';
+      background: url('http://www.dogstudio.be/wd242/shadow.png') no-repeat;
+    }
+  }
+
+  &__thumb {
+    display: block;
+    width: 100%;
+  }
+
+  &__content {
+    position: absolute;
+    left: 42px;
+    right: 42px;
+    bottom: 48px;
+    transform: translateZ(100px) scale(0.9);
+
+    h1 {
+      color: white;
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .caption {
+      color: $color-gold;
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+    }
+  }
+
+  &__light {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, black, transparent 40%);
+    backface-visibility: hidden;
+  }
+
+  &__border {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: $border-width;
+    height: $border-height;
+    transform: translateZ(100px) scale(0.9);
+
+    rect {
+      fill: transparent;
+      stroke: $color-border;
+      stroke-width: 2px;
+      stroke-dasharray: 0 $border-dasharray;
+      stroke-dashoffset: #{$border-dasharray / -2};
+      transition: stroke-dasharray 0.25s ease-out, stroke-dashoffset 0.25s ease-out;
+    }
+  }
+
+  &:hover {
+    .fc__border {
+      rect {
+        stroke-dasharray: $border-dasharray;
+        stroke-dashoffset: 0;
+      }
+    }
+  }
+}
