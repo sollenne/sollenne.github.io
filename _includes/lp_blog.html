@@ -17,7 +17,7 @@
 
     <a href="{{ post.url }}" class="fc" id="fc">
         <div class="fc__wrapper">
-            <img src="/img/Untitled-1.png" class="fc__thumb">
+            <img src="/img/Untitled-1.png" class="fc__thumb" data-gradient-map="#000000, #cccccc">
             <div class="fc__content">
                 <h1>{{ post.title }}</h1>
                 <span class="caption"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></span>

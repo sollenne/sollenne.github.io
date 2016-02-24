@@ -88,6 +88,8 @@ $(document).ready(function() {
 
     $('#my-menu').css({'display':''});
 
+    $('img').duotone();
+
 });
 
 var fc = document.getElementById("fc");

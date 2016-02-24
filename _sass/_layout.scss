@@ -2,6 +2,8 @@
 $PrimaryColor: #00C775 !default;
 $White: #fff !default;
 $Black: #222 !default;
+$color-gold: #b0976d !default;
+$color-border: #777777 !default;
 
 @mixin transition($feature: all, $time: 0.3s) {
   -webkit-transition: $feature $time;
@@ -146,7 +148,7 @@ body {
     }
 
     &#blog {
-      background: #e1e3e4;
+      background: $color-gold;
       color: $White;
     }
 
@@ -288,10 +290,6 @@ $border-width: $fc-width - 32px;
 $border-height: $fc-height - 32px;
 $border-dasharray: ($border-width * 2) + ($border-height * 2);
 
-// Colors
-$color-gold: #b0976d;
-$color-border: #777777;
-
 html {
   box-sizing: border-box;
   -moz-osx-font-smoothing: grayscale;
@@ -310,6 +308,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background-color: $color-gold;
 }
 
 .fc {
@@ -333,7 +332,7 @@ body {
       right: 0;
       height: 23px;
       content: '';
-      background: url('http://www.dogstudio.be/wd242/shadow.png') no-repeat;
+      background: url('/img/shadow.png') no-repeat;
     }
   }
 
