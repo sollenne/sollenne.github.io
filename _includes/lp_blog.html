@@ -14,20 +14,22 @@
 
 
     {% for post in site.posts limit: 10 %}
-
-    <a href="{{ post.url }}" class="fc" id="fc">
-        <div class="fc__wrapper">
-            <img src="/img/Untitled-1.png" class="fc__thumb" data-gradient-map="#000000, #cccccc">
-            <div class="fc__content">
-                <h1>{{ post.title }}</h1>
-                <span class="caption"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></span>
+    <article class="blog-post blog-{{ post.name}} col-xs-12 col-sm-6 col-md-4">
+        <a href="{{ post.url }}" class="fc" id="fc">
+            <div class="fc__wrapper">
+                <img src="/img/post_covers/{{ post.name }}.png" class="fc__thumb"
+                     data-gradient-map="#271f37, #deadaf">
+                <div class="fc__content">
+                    <h1>{{ post.title }}</h1>
+                    <span class="caption"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></span>
+                </div>
+                <span class="fc__light"></span>
+                <svg class="fc__border" xmlns="http://www.w3.org/2000/svg">
+                    <rect height="100%" width="100%" />
+                </svg>
             </div>
-            <span class="fc__light"></span>
-            <svg class="fc__border" xmlns="http://www.w3.org/2000/svg">
-                <rect height="100%" width="100%" />
-            </svg>
-        </div>
-    </a>
+        </a>
+    </article>
 
     <!--<a href="{{ post.url }}" class="blog-post col-xs-12 col-sm-6 col-md-4">-->
         <!--<div class="row">-->

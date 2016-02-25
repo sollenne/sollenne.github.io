@@ -92,72 +92,75 @@ $(document).ready(function() {
 
 });
 
-var fc = document.getElementById("fc");
-var wrapper = fc.getElementsByClassName("fc__wrapper")[0];
-var light = fc.getElementsByClassName("fc__light")[0];
 
-var fcHalfHeight = 205;
-var fcHalfWidth = 135;
+//var i, fc, _fc, wrapper, light, fcHalfHeight, fcHalfWidth, defaultLightWidth, defaultLightAngle, maxRotateX, maxRotateY, maxLightWidth, maxLightAngle, lightValue, fcRect, fcOffset;
+fc = document.getElementsByClassName("fc");
+for  (i = 0; i < fc.length; i++) {
+    (function (i) {
+        var vars = {
+            _fc : document.getElementsByClassName("fc")[i],
+            wrapper : fc[i].getElementsByClassName("fc__wrapper")[0],
+            light : fc[i].getElementsByClassName("fc__light")[0],
+            fcHalfHeight : 205,
+            fcHalfWidth : 135,
+            defaultLightWidth : 40,
+            defaultLightAngle : 45,
+            maxRotateX : 6,
+            maxRotateY : 6,
+            maxLightWidth : 25,
+            maxLightAngle : 20,
+            lightValue : {
+                width: 40,
+                angle: 45
+            }
+        };
 
-var defaultLightWidth = 40;
-var defaultLightAngle = 45;
+        vars.wrapper.addEventListener("mousemove", function(event) {
 
-var maxRotateX = 6;
-var maxRotateY = 6;
-var maxLightWidth = 25;
-var maxLightAngle = 20;
+            var fcRect = vars._fc.getBoundingClientRect();
+            var top = fcRect.top + document.body.scrollTop;
 
-var lightValue = {
-    width: defaultLightWidth,
-    angle: defaultLightAngle
-};
+            var mouseX = (event.pageX - fcRect.left) | 0;
+            var mouseY = (event.pageY - top) | 0;
 
-wrapper.addEventListener("mousemove", function(event) {
-    // Get mouse position
-    var fcRect = fc.getBoundingClientRect();
-    var fcOffset = {
-        top: fcRect.top + document.body.scrollTop,
-        left: fcRect.left + document.body.scrollLeft
-    };
-    var mouseX = (event.pageX - fcOffset.left) | 0;
-    var mouseY = (event.pageY - fcOffset.top) | 0;
+            // Move the floating card
+            var diffX = -1 * (vars.fcHalfWidth - mouseX);
+            var diffY = vars.fcHalfHeight - mouseY;
+            var rotateX = diffY / vars.fcHalfHeight * vars.maxRotateX;
+            var rotateY = diffX / vars.fcHalfWidth * vars.maxRotateY;
 
-    // Move the floating card
-    var diffX = -1 * (fcHalfWidth - mouseX);
-    var diffY = fcHalfHeight - mouseY;
-    var rotateX = diffY / fcHalfHeight * maxRotateX;
-    var rotateY = diffX / fcHalfWidth * maxRotateY;
+            dynamics.stop(vars.wrapper);
+            vars.wrapper.style.transform = "rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";
 
-    dynamics.stop(wrapper);
-    wrapper.style.transform = "rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg)";
+            // Move the light
+            vars.lightValue.width = vars.defaultLightWidth - (diffY / vars.fcHalfHeight * vars.maxLightWidth);
+            vars.lightValue.angle = vars.defaultLightAngle + (diffX / vars.fcHalfWidth * vars.maxLightAngle);
 
-    // Move the light
-    lightValue.width = defaultLightWidth - (diffY / fcHalfHeight * maxLightWidth);
-    lightValue.angle = defaultLightAngle + (diffX / fcHalfWidth * maxLightAngle);
+            dynamics.stop(vars.lightValue);
+            vars.light.style.backgroundImage = "linear-gradient(" + vars.lightValue.angle + "deg, black, transparent " + vars.lightValue.width + "%)";
+        });
 
-    dynamics.stop(lightValue);
-    light.style.backgroundImage = "linear-gradient(" + lightValue.angle + "deg, black, transparent " + lightValue.width + "%)";
-});
+        vars.wrapper.addEventListener("mouseleave", function () {
+            // Move the floating card to its initial position
+            dynamics.animate(vars.wrapper, {
+                rotateX: 0,
+                rotateY: 0
+            }, {
+                type: dynamics.spring,
+                duration: 1500
+            });
 
-wrapper.addEventListener("mouseleave", function() {
-    // Move the floating card to its initial position
-    dynamics.animate(wrapper, {
-        rotateX: 0,
-        rotateY: 0
-    }, {
-        type: dynamics.spring,
-        duration: 1500
-    });
-
-    // Move the light to its initial position
-    dynamics.animate(lightValue, {
-        width: defaultLightWidth,
-        angle: defaultLightAngle
-    }, {
-        type: dynamics.spring,
-        duration: 1500,
-        change: function(obj) {
-            light.style.backgroundImage = "linear-gradient(" + obj.angle + "deg, black, transparent " + obj.width + "%)";
-        }
-    });
-});
+            // Move the light to its initial position
+            dynamics.animate(vars.lightValue, {
+                width: vars.defaultLightWidth,
+                angle: vars.defaultLightAngle
+            }, {
+                type: dynamics.spring,
+                duration: 1500,
+                change: function (obj) {
+                    vars.light.style.backgroundImage = "linear-gradient(" + obj.angle + "deg, black, transparent " + obj.width + "%)";
+                }
+            });
+        });
+    })(i);
+}

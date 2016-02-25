@@ -203,50 +203,6 @@ body {
       }
     }
   }
-
-  
-  .blog-post {
-    height:409px;
-    background:#FFF;
-    position: relative;
-    display:block;
-
-    &:before,
-    &:after
-    {
-      z-index: -1;
-      position: absolute;
-      content: "";
-      bottom: 15px;
-      left: 10px;
-      width: 50%;
-      top: 80%;
-      max-width:300px;
-      background: #777;
-      -webkit-box-shadow: 0 15px 10px #777;
-      -moz-box-shadow: 0 15px 10px #777;
-      box-shadow: 0 15px 10px #777;
-      -webkit-transform: rotate(-3deg);
-      -moz-transform: rotate(-3deg);
-      -o-transform: rotate(-3deg);
-      -ms-transform: rotate(-3deg);
-      transform: rotate(-3deg);
-    }
-    &:after
-    {
-      -webkit-transform: rotate(3deg);
-      -moz-transform: rotate(3deg);
-      -o-transform: rotate(3deg);
-      -ms-transform: rotate(3deg);
-      transform: rotate(3deg);
-      right: 10px;
-      left: auto;
-    }
-
-
-  }
-
-
 }
 
 
@@ -308,7 +264,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: $color-gold;
 }
 
 .fc {
@@ -316,7 +271,7 @@ body {
   width: $fc-width;
   height: $fc-height;
   perspective: 1000px;
-  display: block;
+  display: inline-block;
 
   &__wrapper {
     position: relative;
