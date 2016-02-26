@@ -19,9 +19,11 @@
                 {% for p in pages %}
                 <li>
                     {% if page.url != "/" %}
-                    <a href="{{ p.prefix }}{{ p.name }}" data-0="color:rgba(255,255,255,0.7)" data-100="color:rgba(34,34,34,1)">{{ p.name }}</a>
+                    <a href="{{ p.prefix }}{{ p.name }}" data-0="color:rgba(255,255,255,0.7)"
+					   data-100="color:rgba(39,28,49,1)">{{ p.name }}</a>
                     {% else %}
-                    <a href="#{{ p.name }}" data-0="color:rgba(255,255,255,0.7)" data-100="color:rgba(34,34,34,1)">{{ p.name }}</a>
+                    <a href="#{{ p.name }}" data-0="color:rgba(255,255,255,0.7)" data-100="color:rgba(39,28,49,1)">{{
+						p.name }}</a>
                     {% endif %}
                 </li>
                 {% endfor %}

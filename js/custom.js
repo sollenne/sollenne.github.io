@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $('img').duotone();
+
     $("#my-menu").mmenu({
         "navbars": [
             {
@@ -88,7 +91,7 @@ $(document).ready(function() {
 
     $('#my-menu').css({'display':''});
 
-    $('img').duotone();
+
 
 });
 

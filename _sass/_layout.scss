@@ -1,7 +1,7 @@
 //Vars
 $PrimaryColor: #00C775 !default;
 $White: #fff !default;
-$Black: #222 !default;
+$Black: rgba(39,28,49,1) !default;
 $color-gold: #b0976d !default;
 $color-border: #777777 !default;
 
@@ -150,6 +150,9 @@ body {
     &#blog {
       background: $color-gold;
       color: $White;
+      .container {
+        width:100%;
+      }
     }
 
     &#services {

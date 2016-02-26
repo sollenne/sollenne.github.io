@@ -14,7 +14,7 @@
 
 
     {% for post in site.posts limit: 10 %}
-    <article class="blog-post blog-{{ post.name}} col-xs-12 col-sm-6 col-md-4">
+    <article class="blog-post blog-{{ post.name}} col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
         <a href="{{ post.url }}" class="fc" id="fc">
             <div class="fc__wrapper">
                 <img src="/img/post_covers/{{ post.name }}.png" class="fc__thumb"
@@ -31,16 +31,6 @@
         </a>
     </article>
 
-    <!--<a href="{{ post.url }}" class="blog-post col-xs-12 col-sm-6 col-md-4">-->
-        <!--<div class="row">-->
-            <!--<div class="col-xs-12">-->
-                <!--<div class="{{ post.name }}">-->
-                    <!--<h4 class="">{{ post.title }}<small> &ndash; <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></small></h4>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-
-    <!--</a>-->
     {% endfor %}
 </div>
 <a href="/blog/" class="pull-right">more <i class="fa fa-long-arrow-right"></i></a>
