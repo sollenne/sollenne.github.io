@@ -15,6 +15,15 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<!-- Button trigger modal -->
+					<a href="#search" class="search-modal-btn" data-toggle="modal" data-target="#myModal"
+					   data-0="color:rgba(255,255,255,0.7)"
+					   data-100="color:rgba(39,28,49,1)">
+						Search
+					</a>
+
+				</li>
                 {% assign pages = site.data.pages %}
                 {% for p in pages %}
                 <li>

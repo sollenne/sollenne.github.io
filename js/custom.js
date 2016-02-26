@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
     $('img').duotone();
-
     $("#my-menu").mmenu({
         "navbars": [
             {
@@ -26,7 +25,7 @@ $(document).ready(function() {
         , _header_height = _header.outerHeight();
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
-        _sections.each(function() {
+        _sections.each(function () {
             var top = $(this).offset().top - _header_height,
                 bottom = top + $(this).outerHeight();
 
@@ -35,9 +34,11 @@ $(document).ready(function() {
                 _sections.removeClass('active');
 
                 $(this).addClass('active');
-                _header.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+                _header.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
             }
         });
+    }, function () {
+
     });
 
     $(".post-title").slabText({
@@ -87,11 +88,17 @@ $(document).ready(function() {
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
         json: '/search.json',
-    })
+    });
 
     $('#my-menu').css({'display':''});
 
+    $(document).on('click', '.search-modal-btn', function() {
+        $('#myModal').appendTo("body");
+    });
 
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myModal').find('input').focus();
+    })
 
 });
 

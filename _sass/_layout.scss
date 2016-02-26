@@ -15,6 +15,8 @@ $color-border: #777777 !default;
 
 body, html, {
   height: 100%;
+
+
 }
 #skrollr-body {
   min-height: 100%;
@@ -360,3 +362,19 @@ body {
     }
   }
 }
+
+// Modal backdrop
+.modal-backdrop {
+  background-color:transparent;
+  background: $White linear-gradient(to bottom, #049027, #00f23c) no-repeat;
+  height: 100%;
+
+  // Thanks At&&Code: http://codepen.io/artandcode/pen/HoxFp
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(130,37,47,.7) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(130,37,47,.4) 0%, rgba(242,153,75,.7) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.7) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(39,28,49,1) 0%,rgba(209,163,167,.9) 100%), -webkit-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.7) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(39,28,49,1) 0%,rgba(209,163,167,.9)) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.7) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(39,28,49,1) 0%,rgba(209,163,167,.9) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.7) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(39,28,49,1) 0%,rgba(209,163,167,.9) 100%), linear-gradient(135deg, #670d10 0%,#092756 100%);
+}
+
+
