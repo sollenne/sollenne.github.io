@@ -18,6 +18,7 @@
     "tests"
   ],
   "dependencies": {
-    "simple-jekyll-search": "~1.1.1"
+    "simple-jekyll-search": "~1.1.1",
+    "malihu-custom-scrollbar-plugin": "^3.1.3"
   }
 }

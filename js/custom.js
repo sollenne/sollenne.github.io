@@ -98,10 +98,12 @@ $(document).ready(function() {
 
     $('#myModal').on('shown.bs.modal', function () {
         $('#myModal').find('input').focus();
-    })
+    });
+
+
+
 
 });
-
 
 //var i, fc, _fc, wrapper, light, fcHalfHeight, fcHalfWidth, defaultLightWidth, defaultLightAngle, maxRotateX, maxRotateY, maxLightWidth, maxLightAngle, lightValue, fcRect, fcOffset;
 fc = document.getElementsByClassName("fc");
