@@ -93,15 +93,85 @@ $(document).ready(function() {
     $('#my-menu').css({'display':''});
 
     $(document).on('click', '.search-modal-btn', function() {
-        $('#myModal').appendTo("body");
+        $('#searchModal').appendTo("body");
     });
 
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myModal').find('input').focus();
+    $('#searchModal').on('shown.bs.modal', function () {
+        $('#searchModal').find('input').focus();
     });
 
+    var equalheight;
+    equalheight = function(container){
 
+        var currentTallest = 0,
+            currentRowStart = 0,
+            rowDivs = new Array(),
+            $el,
+            topPosition = 0;
+        $(container).each(function() {
 
+            $el = $(this);
+            $($el).height('auto')
+            topPostion = $el.position().top;
+
+            if (currentRowStart != topPostion) {
+                for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                    rowDivs[currentDiv].height(currentTallest);
+                }
+                rowDivs.length = 0; // empty the array
+                currentRowStart = topPostion;
+                currentTallest = $el.height();
+                rowDivs.push($el);
+            } else {
+                rowDivs.push($el);
+                currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+            }
+            for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+        });
+    }
+
+    $(window).load(function() {
+        equalheight('.search-result');
+    });
+
+    $(window).resize(function(){
+        equalheight('.search-result');
+    });
+
+    $(document).keyup(function() {
+        equalheight('.search-result');
+    });
+
+    $('#search-input').on('keyup', function() {
+        if ($(this).val() == '') {
+            $('.search-result').each(function() {
+               $(this).remove();
+            });
+            $('.clear-search a').addClass('disabled');
+        } else {
+            $('.clear-search a').removeClass('disabled');
+        }
+    });
+
+    $('.clear-search a').click(function() {
+        $('#search-input').val('').focus();
+        $('.search-result').each(function() {
+            $(this).remove();
+        });
+        $('.no-results').remove();
+        $(this).addClass('disabled');
+    });
+
+    $('button.close').click(function() {
+        $('#search-input').val('');
+        $('.search-result').each(function() {
+            $(this).remove();
+        });
+        $('.no-results').remove();
+        $('.clear-search a').addClass('disabled');
+    });
 
 });
 

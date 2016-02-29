@@ -50,11 +50,11 @@
 // Actual modal
 .modal-content {
   position: relative;
-  background-color: $modal-content-bg;
-  border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1px solid $modal-content-border-color;
+  //background-color: $modal-content-bg;
+  //border: 1px solid $modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  //border: 1px solid $modal-content-border-color;
   border-radius: $border-radius-large;
-  @include box-shadow(0 3px 9px rgba(0,0,0,.5));
+  //@include box-shadow(0 3px 9px rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
@@ -78,8 +78,11 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: $modal-title-padding;
-  border-bottom: 1px solid $modal-header-border-color;
   @include clearfix;
+  @include box-shadow(0 3px 9px rgba(0,0,0,.5));
+  background-color: $modal-content-bg;
+  border: 1px solid rgba(39,28,49,1); //old browsers fallback (ie8 etc)
+  border: 1px solid rgba(39,28,49,1);
 }
 // Close icon
 .modal-header .close {
@@ -138,7 +141,7 @@
     margin: 30px auto;
   }
   .modal-content {
-    @include box-shadow(0 5px 15px rgba(0,0,0,.5));
+    //@include box-shadow(0 5px 15px rgba(0,0,0,.5));
   }
 
   // Modal sizes

@@ -241,9 +241,9 @@ function compile(data){
     searchInput: null,
     resultsContainer: null,
     json: [],
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: '<li class="list-unstyled col-xs-12 col-sm-6 col-md-4 col-lg-3"> <div class="panel panel-default search-result"><a href="{url}" title="{desc}">{title}</a></div></li>',
     templateMiddleware: function(){},
-    noResultsText: 'No results found',
+    noResultsText: '<h1 class="text-center no-results">No results found.<br><br> <i class="ion-sad-outline"></i></h1>',
     limit: 10,
     fuzzy: false,
     exclude: []
