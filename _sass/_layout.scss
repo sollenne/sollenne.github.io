@@ -13,6 +13,8 @@ $color-border: #777777 !default;
   transition: $feature $time;
 }
 
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+
 body, html {
   height: 100%;
 }
@@ -184,6 +186,15 @@ body {
       background: $White;
       color: $Black;
     }
+
+    h1 {
+      //text-shadow: 0 2px 3px rgba(108, 77, 14, 0.8);
+      font-size: 6.125em;
+      text-transform: uppercase !important;
+      font-family:'haze_light_demoregular', "Impact", Charcoal, Arial Black, Gadget, Sans serif;
+      font-weight: normal;
+      -letter-kern: 0 -3px 0px;
+    }
   }
 
   footer {
@@ -240,7 +251,7 @@ body {
 }
 .slabtextdone .slabtext {
   display:block;
-  font-family:'League Gothic', "Impact", Charcoal, Arial Black, Gadget, Sans serif;
+  font-family:'geared_slabbold', "Impact", Charcoal, Arial Black, Gadget, Sans serif;
   text-transform: uppercase;
   line-height:1;
   color:#222;
@@ -486,11 +497,11 @@ input {
           background-color: $modal-content-bg;
           border: 1px solid rgba(39,28,49,0.8);
           margin-bottom:12px;
-          -webkit-transition: 0.3s ease-in-out;
-          -moz-transition: 0.3s ease-in-out;
-          -ms-transition: 0.3s ease-in-out;
-          -o-transition: 0.3s ease-in-out;
-          transition: 0.3s ease-in-out;
+          -webkit-transition: 0.2s ease-in-out;
+          -moz-transition: 0.2s ease-in-out;
+          -ms-transition: 0.2s ease-in-out;
+          -o-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
 
           &:hover {
             -webkit-transform: scale(1.05);

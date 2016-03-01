@@ -173,6 +173,16 @@ $(document).ready(function() {
         $('.clear-search a').addClass('disabled');
     });
 
+    $('.okshadow').okshadow({
+        color: 'rgba(108, 77, 14, 0.8)',
+        textShadow: true,
+        xMax: 3,
+        yMax: 3,
+        yOffset: 3,
+        fuzzMin: 1,
+        fuzzMax: 6,
+    });
+
 });
 
 //var i, fc, _fc, wrapper, light, fcHalfHeight, fcHalfWidth, defaultLightWidth, defaultLightAngle, maxRotateX, maxRotateY, maxLightWidth, maxLightAngle, lightValue, fcRect, fcOffset;
