@@ -176,11 +176,12 @@ $(document).ready(function() {
     $('.okshadow').okshadow({
         color: 'rgba(108, 77, 14, 0.8)',
         textShadow: true,
-        xMax: 3,
-        yMax: 3,
+        xMax: 5,
+        yMax: 5,
         yOffset: 3,
-        fuzzMin: 1,
-        fuzzMax: 6,
+        fuzzMin: 4,
+        fuzzFactor: 60,
+        fuzzMax: 9,
     });
 
 });

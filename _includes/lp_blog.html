@@ -1,8 +1,10 @@
 {% if site.posts.size > 0 %}
 <div class="list-group row">
     <div class="col-xs-12">
-        <h1 class="okshadow">blog posts</h1>
+        <h1 class="okshadow blog-h tk-museo-sans">Blog Posts</h1>
     </div>
+    <div class="col-xs-12">
+        <hr></div>
 
     {% for post in site.posts limit: 10 %}
     <article class="blog-post blog-{{ post.name}} col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
@@ -10,7 +12,7 @@
             <div class="fc__wrapper">
                 <img src="/img/post_covers/{{ post.name }}.png" class="fc__thumb"
                      data-gradient-map="#271f37, #deadaf">
-                <div class="fc__content">
+                <div class="fc__content text-left">
                     <h1>{{ post.title }}</h1>
                     <span class="caption"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></span>
                 </div>
