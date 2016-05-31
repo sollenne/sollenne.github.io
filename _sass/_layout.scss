@@ -232,6 +232,20 @@ body {
           margin: 0.8em 0;
           font-size: 18px;
           color: #9feaf9;
+
+          i {
+            font-size:1.5em;
+            line-height:1em;
+          }
+        }
+
+        p {
+          line-height:2.5em;
+          height:25px;
+        }
+
+        a:hover {
+          color: #baedf9;
         }
 
         .ghost,

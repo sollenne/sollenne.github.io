@@ -279,7 +279,7 @@ for  (i = 0; i < fc.length; i++) {
     });
     MESSAGES.push({
         delay: 9200,
-        text: '/sollenne$: <a target="_blank" href="https://www.linkedin.com/in/sollenne">linkedin</a> | <a target="_blank" href="https://github.com/sollenne">github</a> | <a target="_blank" href="http://codepen.io/sollenne/">codepen</a>'
+        text: '/sollenne$: <a target="_blank" href="https://www.linkedin.com/in/sollenne"><i class="ion-social-linkedin-outline"></i></a> | <a target="_blank" href="https://github.com/sollenne"><i class="ion-social-github"></i></a> | <a target="_blank" href="http://codepen.io/sollenne/"><i class="ion-social-codepen"></i></a>'
     });
     $container = $('#container');
     $message = $('#message');
