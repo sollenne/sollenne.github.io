@@ -103,6 +103,8 @@ body {
       span {
         color: $Black !important;
       }
+
+
     }
   }
 
@@ -124,16 +126,17 @@ body {
       font-size: 0.9em;
       outline: 0;
       font-family: 'Nova Mono', Courier, monospace;
+      text-transform:lowercase !important;
 
       &.skrollable-between {
         &:hover {
-          color: rgba(255, 255, 255, 1) !important;
+          color: rgba(159,234,249,1) !important;
         }
         &.active,
         &.almost-active {
           color: rgba(255, 255, 255, 0.7) !important;
           &:hover {
-            color: rgba(255, 255, 255, 1) !important;
+            color: rgba(159,234,249,1) !important;
           }
         }
       }
@@ -147,6 +150,7 @@ body {
       }
     }
   } // END HEADER
+
 
   // HERO AREA - HOME PAGE
   .hero {
@@ -224,6 +228,7 @@ body {
           text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
           font-family: 'Nova Mono', Courier, monospace;
           font-smoothing: antialiased;
+          text-transform:lowercase !important;
           margin: 0.8em 0;
           font-size: 18px;
           color: #9feaf9;
