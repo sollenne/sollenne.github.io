@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Cutive+Mono|Nova+Mono);
 
 //Vars
-$PrimaryColor: #00C775 !default;
+$PrimaryColor: #9FEAF9 !default;
 $White: #fff !default;
 $Black: rgba(39,28,49,1) !default;
-$color-gold: #b0976d !default;
+$color-gold: #9FEAF9 !default;
 $color-border: #777777 !default;
 
 @mixin transition($feature: all, $time: 0.3s) {
@@ -111,7 +111,7 @@ body {
   // HEADER
   header.navbar {
     background-color: transparent;
-    border-color: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid #1a1b23;
 
     span {
       line-height:20px;
@@ -122,11 +122,15 @@ body {
 
     a {
 
-      font-weight: 700;
-      font-size: 0.9em;
+      font-weight: 400;
+      font-size: 1.1em;
       outline: 0;
-      font-family: 'Nova Mono', Courier, monospace;
+      //font-family: 'Nova Mono', Courier, monospace;
       text-transform:lowercase !important;
+
+      &.navbar-brand {
+        font-weight:700;
+      }
 
       &.skrollable-between {
         &:hover {
@@ -136,7 +140,7 @@ body {
         &.almost-active {
           color: rgba(255, 255, 255, 0.7) !important;
           &:hover {
-            color: rgba(159,234,249,1) !important;
+            color: rgb(212, 241, 249) !important;
           }
         }
       }
@@ -145,7 +149,7 @@ body {
         &:hover,
         &.active,
         &.almost-active {
-          color: rgba(0, 199, 117, 1) !important;
+          color: rgba(159,234,249,1) !important;
         }
       }
     }
@@ -286,13 +290,13 @@ body {
     }
 
     &#blog {
-      background: rgb(176,151,109);
-      background: -moz-linear-gradient(-45deg,  rgba(176,151,109,1) 0%, rgba(173,130,60,1) 100%);
-      background: -webkit-linear-gradient(-45deg,  rgba(176,151,109,1) 0%,rgba(173,130,60,1) 100%);
-      background: linear-gradient(135deg,  rgba(176,151,109,1) 0%,rgba(173,130,60,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0976d', endColorstr='#ad823c',GradientType=1 );
-
-      color: $White;
+      //background: rgb(176,151,109);
+      //background: -moz-linear-gradient(-45deg,  rgba(176,151,109,1) 0%, rgba(173,130,60,1) 100%);
+      //background: -webkit-linear-gradient(-45deg,  rgba(176,151,109,1) 0%,rgba(173,130,60,1) 100%);
+      //background: linear-gradient(135deg,  rgba(176,151,109,1) 0%,rgba(173,130,60,1) 100%);
+      //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0976d', endColorstr='#ad823c',GradientType=1 );
+      background: $White;
+      color: $Black;
       .container {
         width:100%;
       }
