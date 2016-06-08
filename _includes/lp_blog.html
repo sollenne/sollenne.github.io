@@ -1,7 +1,7 @@
 {% if site.posts.size > 0 %}
 <div class="list-group row">
     <div class="col-xs-12">
-        <h4 class="okshadow blog-h tk-museo-sans">Blog Posts</h4>
+        <a class="title" href="/blog/"><h2>Blog Posts</h2></a>
     </div>
     <div class="col-xs-12">
         <hr></div>
@@ -11,7 +11,7 @@
         <a href="{{ post.url }}" class="fc" id="fc">
             <div class="fc__wrapper">
                 <img src="/img/post_covers/{{ post.name }}.png" class="fc__thumb"
-                     data-gradient-map="#2F3241, #deadaf">
+                     data-gradient-map="#2F3241, #9097BD">
                 <div class="fc__content text-left">
                     <h1>{{ post.title }}</h1>
                     <span class="caption"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b. %d, %Y' }}</time></span>
