@@ -1,19 +1,22 @@
-<div class="col-xs-12">
+<div class="row">
+        <div class="col-xs-12">
+                <h2 class="text-center">Still ready to get started?</h2>
 
-        <form action="https://formspree.io/rich@sollenne.com"
-              method="POST">
+            <form action="https://formspree.io/rich@sollenne.com"
+                  method="POST">
                 <input type="text" name="name">
                 <input type="email" name="_replyto">
                 <input type="submit" value="Send">
-        </form>
+            </form>
 
 
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-        {% if site.github_username %}
-        {% include icon-github.html username=site.github_username %}
-        {% endif %}
-        {% if site.twitter_username %}
-        {% include icon-twitter.html username=site.twitter_username %}
-        {% endif %}
-        {{ site.description }}
+            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+            {% if site.github_username %}
+            {% include icon-github.html username=site.github_username %}
+            {% endif %}
+            {% if site.twitter_username %}
+            {% include icon-twitter.html username=site.twitter_username %}
+            {% endif %}
+            {{ site.description }}
+        </div>
 </div>

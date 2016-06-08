@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afbbf862-c3c9-4396-b872-d103b51aee05" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/Sass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/angular.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/bootstrap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/bower.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/codepen.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/git.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/gulp_sass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/ionic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/nodejs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/npm.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/yeoman.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/lp_blog.html" afterPath="$PROJECT_DIR$/_includes/lp_blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/lp_contact.html" afterPath="$PROJECT_DIR$/_includes/lp_contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/lp_portfolio.html" afterPath="$PROJECT_DIR$/_includes/lp_portfolio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/lp_services.html" afterPath="$PROJECT_DIR$/_includes/lp_services.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
     </list>
     <ignored path="sollenne.github.io.iws" />
@@ -26,24 +40,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="290" column="29" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+            <state relative-caret-position="309">
+              <caret line="498" column="21" selection-start-line="498" selection-start-column="21" selection-end-line="498" selection-end-column="21" />
               <folding>
-                <element signature="e#1364#9303#0" expanded="false" />
-                <element signature="e#1515#9298#2" expanded="true" />
-                <element signature="e#9313#9357#0" expanded="false" />
-                <element signature="e#9368#9395#0" expanded="false" />
-                <element signature="e#9412#9695#0" expanded="false" />
-                <element signature="e#16514#18363#0" expanded="false" />
-                <element signature="e#18399#19765#0" expanded="false" />
-                <element signature="e#19779#19813#0" expanded="false" />
-                <element signature="e#19819#19855#0" expanded="false" />
-                <element signature="e#19903#20355#0" expanded="false" />
-                <element signature="e#20387#22944#0" expanded="false" />
+                <element signature="e#1632#9571#0" expanded="false" />
+                <element signature="e#1783#9566#2" expanded="true" />
+                <element signature="e#9581#9625#0" expanded="false" />
+                <element signature="e#9636#9663#0" expanded="false" />
+                <element signature="e#9680#9963#0" expanded="false" />
+                <element signature="e#9993#10975#0" expanded="false" />
+                <element signature="e#11027#13812#0" expanded="false" />
+                <element signature="e#18587#19953#0" expanded="false" />
+                <element signature="e#19967#20001#0" expanded="false" />
+                <element signature="e#20007#20043#0" expanded="false" />
+                <element signature="e#20091#20543#0" expanded="false" />
+                <element signature="e#20575#23132#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lp_services.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="8" column="374" selection-start-line="8" selection-start-column="374" selection-end-line="8" selection-end-column="374" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lp_portfolio.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_includes/lp_portfolio.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,48 +86,8 @@
       <file leaf-file-name="lp_contact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/lp_contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="134" selection-start-line="0" selection-start-column="134" selection-end-line="0" selection-end-column="134" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hero.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_includes/hero.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="82" selection-start-line="0" selection-start-column="82" selection-end-line="0" selection-end-column="82" />
+            <state relative-caret-position="48">
+              <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -101,28 +96,18 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="292">
               <caret line="281" column="316" selection-start-line="281" selection-start-column="316" selection-end-line="281" selection-end-column="316" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/main.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lp_blog.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lp_blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/lp_blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+            <state relative-caret-position="-98">
+              <caret line="3" column="99" selection-start-line="3" selection-start-column="99" selection-end-line="3" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -148,8 +133,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-05-27-fa2png.html" />
-        <option value="$PROJECT_DIR$/_posts/2014-08-03-tags-and-categories-on-github-pages.html" />
         <option value="$PROJECT_DIR$/_includes/google_analytics.html" />
         <option value="$PROJECT_DIR$/_posts/2015-02-05-first-post.html" />
         <option value="$PROJECT_DIR$/_posts/2016-02-05-first-post.html" />
@@ -195,10 +178,12 @@
         <option value="$PROJECT_DIR$/_includes/hero.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/_includes/lp_contact.html" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
-        <option value="$PROJECT_DIR$/_sass/_layout.scss" />
+        <option value="$PROJECT_DIR$/_includes/lp_contact.html" />
+        <option value="$PROJECT_DIR$/_includes/lp_portfolio.html" />
+        <option value="$PROJECT_DIR$/_includes/lp_services.html" />
         <option value="$PROJECT_DIR$/_includes/lp_blog.html" />
+        <option value="$PROJECT_DIR$/_sass/_layout.scss" />
       </list>
     </option>
   </component>
@@ -258,20 +243,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sollenne.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sollenne.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sollenne.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,7 +757,7 @@
       <workItem from="1456261173417" duration="3797000" />
       <workItem from="1456369722361" duration="17000" />
       <workItem from="1456369749578" duration="55799000" />
-      <workItem from="1464706919026" duration="21435000" />
+      <workItem from="1464706919026" duration="26475000" />
     </task>
     <task id="LOCAL-00001" summary="removed other blogs. added my first.">
       <created>1454698399218</created>
@@ -956,11 +927,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464877810085</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="UI for blog posts">
+      <created>1465414964088</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1465414964088</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193376000" />
+    <option name="totallyTimeSpent" value="198416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-157" width="1920" height="1057" extended-state="6" />
@@ -1056,7 +1034,8 @@
     <MESSAGE value="change navbar-brand-color" />
     <MESSAGE value="change social on hero to icons" />
     <MESSAGE value="UI to top header" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI to top header" />
+    <MESSAGE value="UI for blog posts" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI for blog posts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1069,20 +1048,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_layouts/blog_by_category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/blog_by_tag.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/tag/django.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1368,14 +1333,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_font-saturnv.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1411,22 +1368,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="281" column="316" selection-start-line="281" selection-start-column="316" selection-end-line="281" selection-end-column="316" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1439,6 +1380,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="281" column="316" selection-start-line="281" selection-start-column="316" selection-end-line="281" selection-end-column="316" />
           <folding />
         </state>
       </provider>
@@ -1459,39 +1416,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_includes/lp_contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="52" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+        <state relative-caret-position="48">
+          <caret line="2" column="67" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/lp_portfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="65" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="374" selection-start-line="8" selection-start-column="374" selection-end-line="8" selection-end-column="374" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/lp_blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="3" column="99" selection-start-line="3" selection-start-column="99" selection-end-line="3" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="290" column="29" selection-start-line="290" selection-start-column="29" selection-end-line="290" selection-end-column="29" />
+        <state relative-caret-position="309">
+          <caret line="498" column="21" selection-start-line="498" selection-start-column="21" selection-end-line="498" selection-end-column="21" />
           <folding>
-            <element signature="e#1364#9303#0" expanded="false" />
-            <element signature="e#1515#9298#2" expanded="true" />
-            <element signature="e#9313#9357#0" expanded="false" />
-            <element signature="e#9368#9395#0" expanded="false" />
-            <element signature="e#9412#9695#0" expanded="false" />
-            <element signature="e#16514#18363#0" expanded="false" />
-            <element signature="e#18399#19765#0" expanded="false" />
-            <element signature="e#19779#19813#0" expanded="false" />
-            <element signature="e#19819#19855#0" expanded="false" />
-            <element signature="e#19903#20355#0" expanded="false" />
-            <element signature="e#20387#22944#0" expanded="false" />
+            <element signature="e#1632#9571#0" expanded="false" />
+            <element signature="e#1783#9566#2" expanded="true" />
+            <element signature="e#9581#9625#0" expanded="false" />
+            <element signature="e#9636#9663#0" expanded="false" />
+            <element signature="e#9680#9963#0" expanded="false" />
+            <element signature="e#9993#10975#0" expanded="false" />
+            <element signature="e#11027#13812#0" expanded="false" />
+            <element signature="e#18587#19953#0" expanded="false" />
+            <element signature="e#19967#20001#0" expanded="false" />
+            <element signature="e#20007#20043#0" expanded="false" />
+            <element signature="e#20091#20543#0" expanded="false" />
+            <element signature="e#20575#23132#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/lp_blog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
