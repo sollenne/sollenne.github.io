@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afbbf862-c3c9-4396-b872-d103b51aee05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/foundation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/gradle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/grunt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/gulp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/jekyll.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/less.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/react.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/springboot.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/bootstrap.png" afterPath="$PROJECT_DIR$/img/logos/bootstrap.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/bower.png" afterPath="$PROJECT_DIR$/img/logos/bower.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/yeoman.png" afterPath="$PROJECT_DIR$/img/logos/yeoman.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/amazon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/intellij.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/laravel.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/lp_services.html" afterPath="$PROJECT_DIR$/_includes/lp_services.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/__pug-logo-colour-wide.svg" afterPath="$PROJECT_DIR$/img/logos/__pug-logo-colour-wide.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/custom.js" afterPath="$PROJECT_DIR$/js/custom.js" />
     </list>
     <ignored path="sollenne.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="379" column="23" selection-start-line="379" selection-start-column="23" selection-end-line="379" selection-end-column="23" />
+            <state relative-caret-position="268">
+              <caret line="382" column="26" selection-start-line="382" selection-start-column="26" selection-end-line="382" selection-end-column="26" />
               <folding>
                 <element signature="e#1632#9571#0" expanded="false" />
                 <element signature="e#1783#9566#2" expanded="true" />
@@ -53,22 +44,22 @@
                 <element signature="e#9993#10975#0" expanded="false" />
                 <element signature="e#11027#13812#0" expanded="false" />
                 <element signature="e#14882#15400#0" expanded="false" />
-                <element signature="e#17761#19434#0" expanded="false" />
-                <element signature="e#19470#20836#0" expanded="false" />
-                <element signature="e#20850#20884#0" expanded="false" />
-                <element signature="e#20890#20926#0" expanded="false" />
-                <element signature="e#20974#21426#0" expanded="false" />
-                <element signature="e#21458#24015#0" expanded="false" />
+                <element signature="e#17818#19491#0" expanded="false" />
+                <element signature="e#19527#20893#0" expanded="false" />
+                <element signature="e#20907#20941#0" expanded="false" />
+                <element signature="e#20947#20983#0" expanded="false" />
+                <element signature="e#21031#21483#0" expanded="false" />
+                <element signature="e#21515#24072#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lp_services.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lp_services.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+            <state relative-caret-position="335">
+              <caret line="22" column="167" selection-start-line="22" selection-start-column="167" selection-end-line="22" selection-end-column="167" />
               <folding />
             </state>
           </provider>
@@ -163,8 +154,8 @@
         <option value="$PROJECT_DIR$/_sass/bootstrap/mixins/_buttons.scss" />
         <option value="$PROJECT_DIR$/_sass/bootstrap/_buttons.scss" />
         <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/_includes/lp_services.html" />
         <option value="$PROJECT_DIR$/_sass/_layout.scss" />
+        <option value="$PROJECT_DIR$/_includes/lp_services.html" />
       </list>
     </option>
   </component>
@@ -778,7 +769,7 @@
       <workItem from="1456261173417" duration="3797000" />
       <workItem from="1456369722361" duration="17000" />
       <workItem from="1456369749578" duration="55799000" />
-      <workItem from="1464706919026" duration="37903000" />
+      <workItem from="1464706919026" duration="38865000" />
     </task>
     <task id="LOCAL-00001" summary="removed other blogs. added my first.">
       <created>1454698399218</created>
@@ -969,11 +960,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465499668325</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add logos">
+      <created>1465509174618</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1465509174618</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209844000" />
+    <option name="totallyTimeSpent" value="210806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-157" width="1920" height="1053" extended-state="6" />
@@ -1045,7 +1043,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="I changed too much last time. Incremental changes required" />
     <MESSAGE value="fix disqus dynamic loading" />
     <MESSAGE value="fix typos per Ryan" />
     <MESSAGE value="fix typos per Ryan part 2" />
@@ -1070,7 +1067,8 @@
     <MESSAGE value="UI for blog posts" />
     <MESSAGE value="ui and services... some logos" />
     <MESSAGE value="services section" />
-    <option name="LAST_COMMIT_MESSAGE" value="services section" />
+    <MESSAGE value="add logos" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1469,14 +1467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/bootstrap/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1485,18 +1475,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
+    <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="22" column="66" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
+        <state relative-caret-position="48">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="379" column="23" selection-start-line="379" selection-start-column="23" selection-end-line="379" selection-end-column="23" />
+        <state relative-caret-position="268">
+          <caret line="382" column="26" selection-start-line="382" selection-start-column="26" selection-end-line="382" selection-end-column="26" />
           <folding>
             <element signature="e#1632#9571#0" expanded="false" />
             <element signature="e#1783#9566#2" expanded="true" />
@@ -1506,13 +1496,21 @@
             <element signature="e#9993#10975#0" expanded="false" />
             <element signature="e#11027#13812#0" expanded="false" />
             <element signature="e#14882#15400#0" expanded="false" />
-            <element signature="e#17761#19434#0" expanded="false" />
-            <element signature="e#19470#20836#0" expanded="false" />
-            <element signature="e#20850#20884#0" expanded="false" />
-            <element signature="e#20890#20926#0" expanded="false" />
-            <element signature="e#20974#21426#0" expanded="false" />
-            <element signature="e#21458#24015#0" expanded="false" />
+            <element signature="e#17818#19491#0" expanded="false" />
+            <element signature="e#19527#20893#0" expanded="false" />
+            <element signature="e#20907#20941#0" expanded="false" />
+            <element signature="e#20947#20983#0" expanded="false" />
+            <element signature="e#21031#21483#0" expanded="false" />
+            <element signature="e#21515#24072#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="22" column="167" selection-start-line="22" selection-start-column="167" selection-end-line="22" selection-end-column="167" />
+          <folding />
         </state>
       </provider>
     </entry>
