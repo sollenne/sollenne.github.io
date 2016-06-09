@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('img').duotone();
+    $('.fc__thumb').duotone();
     $("#my-menu").mmenu({
         "navbars": [
             {

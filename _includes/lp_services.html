@@ -17,6 +17,19 @@
         </div>
         <hr>
         <h2 class="text-center">Cool icons for things I use.</h2>
-        <p class="lead">In in orci velit. Praesent porta justo vel scelerisque pulvinar. Sed lacinia tempus metus eu suscipit. Integer accumsan neque vel ligula tempus, a placerat neque placerat. Aenean ac risus tortor. Suspendisse sed nulla at lacus consectetur volutpat nec nec orci. Phasellus eget laoreet turpis, id hendrerit libero.</p>
+        <p class="lead">In in orci velit. Praesent porta justo vel scelerisque pulvinar. Sed lacinia tempus metus eu suscipit. Integer accumsan neque vel ligula tempus, a placerat neque placerat. Aenean ac risus tortor. Suspendisse sed nulla at lacus consectetur volutpat nec nec orci. Phasellus eget laoreet turpis, id hendrerit libero.
+        </p>
+        <div class="technologies">
+            {% assign devtech_array = "angular|react|ionic|jekyll|bootstrap|foundation|sass|less|nodejs|grunt|gulp|yeoman|bower|npm|git|codepen|springboot|gradle" | split: "|" %}
+            <div class="row">
+                {% for item in devtech_array %}
+                    <div class="col-xs-2">
+                        <div><img src="/img/logos/{{ item }}.png" data-gradient-map="#2F3241, #9097BD" alt="{{ item }}"></div>
+                        {{ item }}
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
     </div>
 </div>
