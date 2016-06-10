@@ -17,16 +17,66 @@
         </div>
         <hr>
         <h2 class="text-center">Cool icons for things I use.</h2>
-        <p class="lead">In in orci velit. Praesent porta justo vel scelerisque pulvinar. Sed lacinia tempus metus eu suscipit. Integer accumsan neque vel ligula tempus, a placerat neque placerat. Aenean ac risus tortor. Suspendisse sed nulla at lacus consectetur volutpat nec nec orci. Phasellus eget laoreet turpis, id hendrerit libero.
+        <p class="lead">Listed below are my most commonly used dev tools and technologies. There are other technologies that I use, have used, or tinker with that are not listed because I don't want to misrepresent myself. These include Java, Springboot, Gradle, Wordpress, Hybris, MongoDB, Slush, Ionic, Post Script, and ASP.net.
         </p>
         <div class="technologies">
-            {% assign devtech_array = "angular|react|ionic|jekyll|bootstrap|foundation|sass|less|nodejs|grunt|gulp|yeoman|bower|npm|git|codepen|amazon|laravel|intellij" | split: "|" %}
+            {% assign devtech_frameworks = "angular|react|ember|jekyll|laravel" | split: "|" %}
             <div class="row">
-                {% for item in devtech_array %}
-                    <div class="col-xs-2">
-                        <div><img src="/img/logos/{{ item }}.png" data-gradient-map="#2F3241, #9097BD" alt="{{ item }}"></div>
-                        {{ item }}
-                    </div>
+                <div class="col-xs-12">
+                    <h3>Frameworks</h3>
+                    <hr>
+                </div>
+                <div class="col-xs-1"></div>
+                {% for framework in devtech_frameworks %}
+                    <a href="#" class="col-xs-2 devtech">
+                        <div><img src="/img/logos/{{ framework }}.png" alt="{{ framework }}"></div>
+                        {{ framework }}
+                    </a>
+                {% endfor %}
+            </div>
+
+            {% assign devtech_uilibraries = "bootstrap|foundation|sass|less|pug" | split: "|" %}
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>UI Libraries & Compilers</h3>
+                    <hr>
+                </div>
+                <div class="col-xs-1"></div>
+                {% for lib in devtech_uilibraries %}
+                <a href="#" class="col-xs-2 devtech">
+                    <div><img src="/img/logos/{{ lib }}.png" alt="{{ lib }}"></div>
+                    {{ lib }}
+                </a>
+                {% endfor %}
+            </div>
+
+            {% assign devtech_devenv = "grunt|gulp|yeoman|bower|npm" | split: "|" %}
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Environment & build tools</h3>
+                    <hr>
+                </div>
+                <div class="col-xs-1"></div>
+                {% for de in devtech_devenv %}
+                <a href="#" class="col-xs-2 devtech">
+                    <div><img src="/img/logos/{{ de }}.png" alt="{{ de }}"></div>
+                    {{ de }}
+                </a>
+                {% endfor %}
+            </div>
+
+            {% assign devtech_vcs = "git|github|bitbucket|amazon|intellij" | split: "|" %}
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Version Control & CDN's</h3>
+                    <hr>
+                </div>
+                <div class="col-xs-1"></div>
+                {% for vcs in devtech_vcs %}
+                <a href="#" class="col-xs-2 devtech">
+                    <div><img src="/img/logos/{{ vcs }}.png" alt="{{ vcs }}"></div>
+                    {{ vcs }}
+                </a>
                 {% endfor %}
             </div>
 

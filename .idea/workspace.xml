@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afbbf862-c3c9-4396-b872-d103b51aee05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/amazon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/intellij.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/laravel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/bitbucket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/ember.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/github.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/logos/pug.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/foundation.png" afterPath="$PROJECT_DIR$/img/logos/foundation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/git.png" afterPath="$PROJECT_DIR$/img/logos/git.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/laravel.png" afterPath="$PROJECT_DIR$/img/logos/laravel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/npm.png" afterPath="$PROJECT_DIR$/img/logos/npm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/logos/yeoman.png" afterPath="$PROJECT_DIR$/img/logos/yeoman.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/lp_services.html" afterPath="$PROJECT_DIR$/_includes/lp_services.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sass/_layout.scss" afterPath="$PROJECT_DIR$/_sass/_layout.scss" />
@@ -30,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="382" column="26" selection-start-line="382" selection-start-column="26" selection-end-line="382" selection-end-column="26" />
+            <state relative-caret-position="528">
+              <caret line="418" column="46" selection-start-line="418" selection-start-column="46" selection-end-line="418" selection-end-column="46" />
               <folding>
                 <element signature="e#1632#9571#0" expanded="false" />
                 <element signature="e#1783#9566#2" expanded="true" />
@@ -43,23 +49,23 @@
                 <element signature="e#9680#9963#0" expanded="false" />
                 <element signature="e#9993#10975#0" expanded="false" />
                 <element signature="e#11027#13812#0" expanded="false" />
-                <element signature="e#14882#15400#0" expanded="false" />
-                <element signature="e#17818#19491#0" expanded="false" />
-                <element signature="e#19527#20893#0" expanded="false" />
-                <element signature="e#20907#20941#0" expanded="false" />
-                <element signature="e#20947#20983#0" expanded="false" />
-                <element signature="e#21031#21483#0" expanded="false" />
-                <element signature="e#21515#24072#0" expanded="false" />
+                <element signature="e#15027#15545#0" expanded="false" />
+                <element signature="e#18893#20566#0" expanded="false" />
+                <element signature="e#20602#21968#0" expanded="false" />
+                <element signature="e#21982#22016#0" expanded="false" />
+                <element signature="e#22022#22058#0" expanded="false" />
+                <element signature="e#22106#22558#0" expanded="false" />
+                <element signature="e#22590#25147#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lp_services.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lp_services.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="22" column="167" selection-start-line="22" selection-start-column="167" selection-end-line="22" selection-end-column="167" />
+            <state relative-caret-position="191">
+              <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -154,8 +160,8 @@
         <option value="$PROJECT_DIR$/_sass/bootstrap/mixins/_buttons.scss" />
         <option value="$PROJECT_DIR$/_sass/bootstrap/_buttons.scss" />
         <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/_sass/_layout.scss" />
         <option value="$PROJECT_DIR$/_includes/lp_services.html" />
+        <option value="$PROJECT_DIR$/_sass/_layout.scss" />
       </list>
     </option>
   </component>
@@ -769,7 +775,7 @@
       <workItem from="1456261173417" duration="3797000" />
       <workItem from="1456369722361" duration="17000" />
       <workItem from="1456369749578" duration="55799000" />
-      <workItem from="1464706919026" duration="38865000" />
+      <workItem from="1464706919026" duration="46448000" />
     </task>
     <task id="LOCAL-00001" summary="removed other blogs. added my first.">
       <created>1454698399218</created>
@@ -967,11 +973,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465509174618</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add logos 2">
+      <created>1465510232617</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1465510232617</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210806000" />
+    <option name="totallyTimeSpent" value="218389000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-157" width="1920" height="1053" extended-state="6" />
@@ -1043,7 +1056,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix disqus dynamic loading" />
     <MESSAGE value="fix typos per Ryan" />
     <MESSAGE value="fix typos per Ryan part 2" />
     <MESSAGE value="trying search" />
@@ -1068,7 +1080,8 @@
     <MESSAGE value="ui and services... some logos" />
     <MESSAGE value="services section" />
     <MESSAGE value="add logos" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logos" />
+    <MESSAGE value="add logos 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logos 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1483,10 +1496,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="382" column="26" selection-start-line="382" selection-start-column="26" selection-end-line="382" selection-end-column="26" />
+        <state relative-caret-position="528">
+          <caret line="418" column="46" selection-start-line="418" selection-start-column="46" selection-end-line="418" selection-end-column="46" />
           <folding>
             <element signature="e#1632#9571#0" expanded="false" />
             <element signature="e#1783#9566#2" expanded="true" />
@@ -1495,22 +1516,14 @@
             <element signature="e#9680#9963#0" expanded="false" />
             <element signature="e#9993#10975#0" expanded="false" />
             <element signature="e#11027#13812#0" expanded="false" />
-            <element signature="e#14882#15400#0" expanded="false" />
-            <element signature="e#17818#19491#0" expanded="false" />
-            <element signature="e#19527#20893#0" expanded="false" />
-            <element signature="e#20907#20941#0" expanded="false" />
-            <element signature="e#20947#20983#0" expanded="false" />
-            <element signature="e#21031#21483#0" expanded="false" />
-            <element signature="e#21515#24072#0" expanded="false" />
+            <element signature="e#15027#15545#0" expanded="false" />
+            <element signature="e#18893#20566#0" expanded="false" />
+            <element signature="e#20602#21968#0" expanded="false" />
+            <element signature="e#21982#22016#0" expanded="false" />
+            <element signature="e#22022#22058#0" expanded="false" />
+            <element signature="e#22106#22558#0" expanded="false" />
+            <element signature="e#22590#25147#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_includes/lp_services.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="22" column="167" selection-start-line="22" selection-start-column="167" selection-end-line="22" selection-end-column="167" />
-          <folding />
         </state>
       </provider>
     </entry>

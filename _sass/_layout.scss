@@ -305,6 +305,15 @@ body {
       margin-top:50px;
       //#20515b
     }
+
+    h3 {
+      font-weight:400;
+      color: #20515b !important;
+      font-size: 22px;
+      margin-top:40px;
+      margin-bottom:-5px;
+    }
+
     p.lead {
       color: #3a585f;
       text-align:center;
@@ -374,18 +383,44 @@ body {
       .technologies {
         color: #7c9398;
         text-transform: capitalize;
-        margin-bottom:50px;
-        .col-xs-2 {
+        margin-bottom:65px;
+        .col-xs-2.devtech {
           margin-bottom: 54px;
           height:100px;
           text-align:center;
+          text-decoration:none;
+          color: #7c9398;
+          //transition: transform .32s;
+          //backface-visibility: hidden;
+          //transform: translateZ(0);
+
           > div {
             height: 100px;
+            -webkit-transition: all 0.32s linear;
+            transition: all 0.32s linear;
+            //-webkit-transform: scale(1);
+            transform: translateZ(0) scale(0.9, 0.9);
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0) scale(0.9, 0.9);
           }
           img {
             display:block;
             margin:0 auto;
             width:100%;
+
+          }
+          &:hover {
+            color: #7c9398 !important;
+            //transform: scale(1.1);
+            //transition-duration: .08s;
+            > div {
+              -webkit-backface-visibility: hidden;
+              -webkit-transform: translateZ(0) scale(1, 1);
+              transform: translateZ(0) scale(1, 1);
+              -webkit-transition: all 0.08s linear;
+              transition: all 0.08s linear;
+
+            }
           }
         }
       }
