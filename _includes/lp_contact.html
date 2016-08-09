@@ -1,22 +1,46 @@
 <div class="row">
         <div class="col-xs-12">
-                <h2 class="text-center">Still ready to get started?</h2>
+            <h2 class="text-center">Still ready to get started?</h2>
 
-            <form action="https://formspree.io/rich@sollenne.com"
-                  method="POST">
-                <input type="text" name="name">
-                <input type="email" name="_replyto">
-                <input type="submit" value="Send">
-            </form>
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <form action="https://formspree.io/rich@sollenne.com" method="POST" class="contact-form">
+
+                        <div class="input-container">
+                            <input type="text" name="name" class="question" id="nme" required autocomplete="off">
+                            <label for="nme">What's your name?</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="text" name="email" class="question" id="eml" required autocomplete="off">
+                            <label for="eml">What's your email?</label>
+                        </div>
+
+                        <div class="input-container ta">
+                            <textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>
+                            <label for="msg">What's your message?</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg"><i class="ion-ios-paperplane"></i>&nbsp;&nbsp;Submit!</button>
+                    </form>
+                </div>
+            </div>
+
+            <!--<input type="text" name="name" class="question" id="nme" required autocomplete="off" />-->
+            <!--<label for="nme"><span>What's your name?</span></label>-->
+            <!--<textarea name="message" rows="2" class="question" id="msg" required autocomplete="off"></textarea>-->
+            <!--<label for="msg"><span>What's your message?</span></label>-->
+            <!--<input type="submit" value="Submit!" />-->
 
 
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-            {% if site.github_username %}
-            {% include icon-github.html username=site.github_username %}
-            {% endif %}
-            {% if site.twitter_username %}
-            {% include icon-twitter.html username=site.twitter_username %}
-            {% endif %}
-            {{ site.description }}
+
+            <!--<a href="mailto:{{ site.email }}">{{ site.email }}</a>-->
+            <!--{% if site.github_username %}-->
+            <!--{% include icon-github.html username=site.github_username %}-->
+            <!--{% endif %}-->
+            <!--{% if site.twitter_username %}-->
+            <!--{% include icon-twitter.html username=site.twitter_username %}-->
+            <!--{% endif %}-->
+            <!--{{ site.description }}-->
         </div>
 </div>

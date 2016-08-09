@@ -770,5 +770,76 @@ input {
 
 
 
+.contact-form {
+  text-align: center;
 
+  .input-container {
+    height: 70px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: text;
 
+    input,
+    textarea {
+      border-radius: 4px;
+      margin: 0;
+      height: 70px;
+      border: 1px solid #7c9398;
+      font-weight: 300;
+      width: 100%;
+      padding: 0 10px;
+      padding-top: 18px;
+      font-size: 22px;
+      background: rgba(0, 0, 0, 0);
+      transition: padding-top 0.2s ease, margin-top 0.2s ease;
+      overflow-x: hidden; /* Hack to make "rows" attribute apply in Firefox. */
+
+      &:focus,
+      &:valid {
+        outline: 0;
+        border-color: #20515b;
+
+        + label {
+          top: 5px;
+          bottom: 50px;
+          line-height: 25px;
+          font-size: 12px;
+        }
+      }
+
+      + label {
+        text-align: left;
+        display: block;
+        position: absolute;
+        white-space: nowrap;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        line-height: 70px;
+        padding: 0 10px;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        font-size: 22px;
+        font-weight: 300;
+        cursor: text;
+        color: #7c9398;
+      }
+    }
+
+    &.ta {
+      height: 150px;
+
+      textarea {
+        height: 150px;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  button.btn.btn-primary.btn-lg {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+}
