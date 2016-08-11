@@ -17,3 +17,7 @@ url: "http://sollenne.com" # the base hostname & protocol for your site
 twitter_username: richsollenne
 github_username:  sollenne
 
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
