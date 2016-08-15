@@ -31,7 +31,7 @@ body, html {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight:700;
+  font-weight:300;
 }
 
 ::selection {
@@ -130,8 +130,8 @@ body {
       text-transform:lowercase !important;
 
       &.navbar-brand {
-        font-weight:700;
-        text-transform: uppercase;
+        font-weight:400;
+        text-transform: uppercase !important;
         //font-family: 'Nova Mono', Courier, monospace;
       }
 
