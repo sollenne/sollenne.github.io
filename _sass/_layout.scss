@@ -2,7 +2,6 @@
 //Vars
 $PrimaryColor: #9FEAF9 !default;
 $White: #fff !default;
-$Black: rgba(0,0,0,0.87) !default;
 $color-gold: #9FEAF9 !default;
 $color-border: #7c9398 !default;
 
@@ -32,10 +31,10 @@ body, html {
 
 
 ::selection {
-  background: $Black; /* WebKit/Blink Browsers */
+  background: $gray-base; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: $Black; /* Gecko Browsers */
+  background: $gray-base; /* Gecko Browsers */
 }
 
 
@@ -73,8 +72,8 @@ body {
       font-weight: 400;
       font-size: 1.1em;
       outline: 0;
-      text-transform:capitalize !important;
-      font-weight:500;
+      text-transform: capitalize !important;
+      font-weight:700;
 
       &.navbar-brand {
         font-weight:500;
@@ -112,9 +111,6 @@ body {
     position: relative;
     z-index:0;
 
-    //.container {
-    //  width:100%;
-    //}
     a.title {
       &:hover {
         text-decoration:none;
@@ -126,7 +122,6 @@ body {
       font-size: 38px;
       margin-bottom:15px;
       margin-top:50px;
-      //#20515b
     }
 
     h3 {
@@ -151,14 +146,10 @@ body {
       max-width:800px;
     }
 
-    &#about {
-      background: $PrimaryColor;
-      color: $White;
-    }
 
     &#blog {
       background: #f6f8f8;
-      color: $Black;
+      color: $gray-base;
       border-bottom: 1px solid #e0e5e6;
       .container {
         width:100%;
@@ -172,7 +163,6 @@ body {
 
     &#services {
       background: $White;
-      color: $Black;
 
       .availability {
         background: #f6f8f8;
@@ -183,7 +173,6 @@ body {
         border-radius: 0.25em;
 
         span {
-          color: #7c9398;
           padding: 0.6em 0.8em;
 
           &.recruiters {
@@ -201,7 +190,6 @@ body {
         }
       }
       .technologies {
-        color: #7c9398;
         text-transform: capitalize;
         margin-bottom:65px;
         .col-xs-2.devtech {
@@ -209,10 +197,6 @@ body {
           height:100px;
           text-align:center;
           text-decoration:none;
-          color: #7c9398;
-          //transition: transform .32s;
-          //backface-visibility: hidden;
-          //transform: translateZ(0);
 
           > div {
             height: 100px;
@@ -230,9 +214,6 @@ body {
 
           }
           &:hover {
-            color: #7c9398 !important;
-            //transform: scale(1.1);
-            //transition-duration: .08s;
             > div {
               -webkit-backface-visibility: hidden;
               -webkit-transform: translateZ(0) scale(1, 1);
@@ -248,14 +229,12 @@ body {
 
     &#portfolio {
       background: #f6f8f8;
-      color: $Black;
       border-top: 1px solid #e0e5e6;
       border-bottom: 1px solid #e0e5e6;
     }
 
     &#contact {
       background: $White;
-      color: $Black;
     }
 
 
@@ -264,7 +243,6 @@ body {
   footer {
     padding:50px 0 20px;
     background: #f6f8f8;
-    color: $Black;
     border-top: 1px solid #e0e5e6;
   }
 
@@ -275,7 +253,6 @@ body {
     li {
       a {
         font-size:3em;
-        color: rgba(255,255,255,0.7);
       }
     }
   }
@@ -389,7 +366,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: linear-gradient(45deg, black, transparent 40%);
+    background-image: linear-gradient(45deg, $gray-base, transparent 40%);
     backface-visibility: hidden;
   }
 
@@ -564,7 +541,7 @@ input {
       border-radius: 4px;
       margin: 0;
       height: 70px;
-      border: 1px solid #7c9398;
+      border: 1px solid $gray-base;
       font-weight: 300;
       width: 100%;
       padding: 0 10px;
@@ -577,7 +554,7 @@ input {
       &:focus,
       &:valid {
         outline: 0;
-        border-color: #20515b;
+        border-color: $gray-base;
 
         + label {
           top: 5px;
