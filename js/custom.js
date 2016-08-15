@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    new Clipboard('.clip');
 
     $('.fc__thumb').duotone();
     $("#my-menu").mmenu({

@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body id="top" class="{% if page.active != "home" %}not-home{% else %}home{% endif %}">
+  <body id="top">
   <div class="site-wrapper">
       {% include off_canvas.html %}
-      {% include header.html %}
+
+      {% if page.external %}
+        {% include header_default.html %}
+      {% endif %}
+
       <div id="skrollr-body">
-          {% if page.url == "/" %}
+
+          {% if page.hero %}
             {% include hero.html %}
           {% endif %}
+
           <div class="page-content">
             <div class="wrapper">
               {{ content }}
             </div>
           </div>
-
         </div>
-        {% include google_analytics.html %}
       </div>
-  {% include footer.html %}
-  {% include modal.html %}
+
+      {% if page.external %}
+          {% include footer.html %}
+          {% include modal.html %}
+      {% endif %}
+      {% include js.html %}
+
   </body>
 </html>

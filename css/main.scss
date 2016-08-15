@@ -4,21 +4,15 @@
 @charset "utf-8";
 
 // Import Custom Fonts and Icons
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+//@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
 @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
     "bootstrap",
-    "font-leaguegothic",
-    "font-liberator",
-    "font-saturnv",
-    "font-onramp",
-    "font-geared",
-    "font-carton",
-    "font-edmond",
-    "font-haze",
+
     "mmenu",
     "syntax-highlighting",
     "layout"
