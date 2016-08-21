@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include core/head.html %}
   <body id="top">
   <div class="site-wrapper">
-      {% include off_canvas.html %}
-      {% include header.html %}
+      {% include core/off_canvas.html %}
+      {% include core/header.html %}
 
       <div id="skrollr-body">
 
@@ -21,10 +21,10 @@
       </div>
 
       {% if page.external %}
-          {% include footer.html %}
-          {% include modal.html %}
+          {% include core/footer.html %}
+          {% include modals/search_modal.html %}
       {% endif %}
-      {% include js.html %}
+      {% include core/js.html %}
 
   </body>
 </html>
