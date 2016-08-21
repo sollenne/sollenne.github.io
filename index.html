@@ -8,17 +8,15 @@ hero: true
 <div class="home">
     {% assign pages = site.data.pages %}
     {% for p in pages %}
-            <section id="{{p.name | downcase }}" data-menu-offset="-50">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h2 class="sr-only">{{p.name}}</h2>
-                        </div>
-
-                        {% include lp_{{p.name | downcase }}.html %}
-
+        <section id="{{p.name | downcase }}" data-menu-offset="-50">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 class="sr-only">{{p.name}}</h2>
                     </div>
+                    {% include landing_page_sections/{{p.name | downcase }}.html %}
                 </div>
-            </section>
+            </div>
+        </section>
     {% endfor %}
 </div>

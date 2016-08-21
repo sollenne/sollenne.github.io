@@ -18,9 +18,6 @@ twitter_username: richsollenne
 github_username:  sollenne
 
 collections:
-  notes:
-    output: true
-    permalink: /notes/:path/
   mg:
     output: true
     permalink: /mg/:path/
