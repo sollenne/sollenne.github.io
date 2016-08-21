@@ -1,54 +1,17 @@
-<header class="navbar navbar-default navbar-fixed-top fixed" data-0="background:rgba(0,0,0,0);border-bottom-color:rgba(0,0,0,0);"
+<header class="navbar navbar-default navbar-fixed-top fixed"
+		data-0="background:rgba(0,0,0,0);border-bottom-color:rgba(0,0,0,0);"
 		data-100="background:rgba(0,0,0,0.87);border-bottom-color:rgba(0,0,0,1);">
 	<div class="container-fluid">
 
-		<div class="navbar-header">
-			<a type="button" class="navbar-toggle collapsed"  href="#my-menu">
-				<i class="ion-android-apps"></i>
-			</a>
-			{% if page.mg %}
-			<a class="navbar-brand"
-			   href="/mg"
-			   data-0="color:rgba(0,0,0,0.87);font-size:1.5em;"
-			   data-100="color:rgba(255, 255, 255, 1);font-size:1em;"><i class="ion-pound"></i>mg</a>
-			{% else %}
-			<a class="navbar-brand"
-			   href="{% if page.external and page.home %}#top{% else %}/{% endif %}"
-			   data-0="color:rgba(0,0,0,0.87);font-size:1.5em;"
-			   data-100="color:rgba(255, 255, 255, 1);font-size:1em;"><i class="ion-pound"></i>{{ site.title }}</a>
-			{% endif %}
+		{% if page.external %}
+			{% include header_external.html %}
+		{% endif %}
 
-		</div>
+		{% if page.mg %}
+			{% include header_mg.html %}
+		{% endif %}
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<!-- Button trigger modal -->
-					<a href="#search" class="search-modal-btn" data-toggle="modal" data-target="#searchModal"
-					   data-0="color:rgba(0, 0, 0, 0.87);font-size:14px;"
-					   data-100="color:rgba(255, 255, 255, 1);font-size:12px;">
-						<i class="ion-ios-search-strong"></i>&nbsp;&nbsp;Search
-					</a>
-
-				</li>
-				<li><span data-0="color:rgba(0, 0, 0, 0.87);font-size:14px;" data-100="color:rgba(255, 255, 255, 1);font-size:12px;">|</span></li>
-
-                {% assign pages = site.data.pages %}
-                {% for p in pages %}
-                <li>
-                    {% if page.url != "/" %}
-                    <a href="{{ p.prefix }}{{ p.name }}" data-0="color:rgba(0, 0, 0, 0.87);font-size:14px;"
-					   data-100="rgba(255, 255, 255, 1);font-size:12px;">{{ p.name }}</a>
-                    {% else %}
-                    <a href="#{{ p.name }}" data-0="color:rgba(0, 0, 0, 0.87);font-size:14px;" data-100="color:rgba(255, 255, 255, 1);font-size:12px;">{{
-						p.name }}</a>
-                    {% endif %}
-                </li>
-                {% endfor %}
-			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+	</div>
 </header>
 
 
