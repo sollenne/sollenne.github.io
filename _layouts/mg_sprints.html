@@ -31,8 +31,10 @@ mg: true
     {% for workitem in page.workitems %}
     <div role="tabpanel" class="tab-pane" id="{{ workitem.name }}">
         <br>
-        <h4><a target="_blank" href="https://mgonline.atlassian.net/browse/{{ workitem.name }}">{{ workitem.name }}</a> - {{ workitem.status }}</h4>
+        <h4><a class="btn btn-primary" href="https://mgonline.atlassian.net/browse/{{ workitem.name }}">{{ workitem.name }}</a> - {{ workitem.status }}</h4>
         <p class="lead">{{ workitem.description }}</p>
+        <h6>What's left?</h6>
+        <p>{{ workitem.remaining | markdownify }}</p>
         <p>{{ workitem.notes | markdownify }}</p>
 
     </div>

@@ -6,47 +6,55 @@ workitems:
     - name: MGS-1504
       status: In Development
       description: "[TECHNICAL] Deep Dive w/ Red Team on US Staging Codebase (in anticipation of production release)"
+      remaining: >
+        ```
+            • Go through and find what I need from each section    
+            • Create list of what's left    
+            • Schedule meeting with Red Team for Wednesday
+            • Meeting with Red Team
+        ```
       notes: >
-        ###### What's left?
-            • Go through and find what I need from each section
-            • Create list of what's left
+        [Confluence Link](https://mgonline.atlassian.net/wiki/pages/viewpage.action?pageId=78840139){:class="btn btn-primary"}
 
     - name: MGS-1762
-      status: Ready For QA
+      status: Closed
       description: "Switch screen animation not always going the correct direction"
+      remaining: >
+        ```
+            • CLOSED
+        ```
       notes: >
-        ###### What's Left?
-            • Make sure this has been deployed
+        Tested on D3
 
     - name: MGS-1670
       status: Closed
       description: "Q2: Mobile Device:iOS/Android: User is not able to select the agent locations given at the bottom as the scroll is not working in mobile devices."
+      remaining: >
+        ```
+            • CLOSED
+        ```
       notes: >
-        ###### What's left?
-            • Nothing. This one should be CLOSED
+        .
 
     - name: MGS-1672
       status: In Development
       description: "D2/US-Staging-Inactive modal is repeating twice"
-      notes: >
-        ###### What's left?
+      remaining: >
+        ```
             • Change the timeout to make this display in under 30 minutes
-            • Test it and get info from @Radhika and @Neeha as to when it's REALLY happening
+            • Test it and get info from @Radhika and @Neeha as to when it's REALLY happening    
+        ```
+      notes: >
+        I tested this one for several hours in multiple situations and was never able to reproduce.
 ---
 
 <!--NOTES PANEL-->
 {% contentfor notes-panel %}
-
-<!-- Target -->
-<textarea id="bar">Mussum ipsum cacilds...</textarea>
-
-<!-- Trigger -->
-<button class="clip" data-clipboard-target="#bar">
-    Cut to clipboard
-</button>
-
-{% endcontentfor %}
-
-{% contentfor testpanel %}
- test
+    <!-- Target -->                                       
+    <textarea id="bar">Mussum ipsum cacilds...</textarea> 
+                                                          
+    <!-- Trigger -->                                      
+    <button class="clip" data-clipboard-target="#bar">    
+        Cut to clipboard                                  
+    </button>
 {% endcontentfor %}

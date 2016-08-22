@@ -1,17 +1,5 @@
-<header class="navbar navbar-default navbar-fixed-top fixed"
-		data-0="background:rgba(0,0,0,0);border-bottom-color:rgba(0,0,0,0);"
-		data-100="background:rgba(0,0,0,0.87);border-bottom-color:rgba(0,0,0,1);">
-	<div class="container-fluid">
-
-		{% if page.mg %}
-			{% include core/headers/header_mg.html %}
-		{% else %}
-			{% include core/headers/header_external.html %}
-		{% endif %}
-
-	</div>
-</header>
-
-
-
-
+{% if page.mg %}
+	{% include core/headers/header_mg.html %}
+{% else %}
+	{% include core/headers/header_external.html %}
+{% endif %}
