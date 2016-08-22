@@ -26,7 +26,7 @@ mg: true
     <div role="tabpanel" class="tab-pane active" id="notes">
         <br>
         <h4>Sprint {{ page.sprint }} Notes</h4>
-        {% contentblock notes-panel %}
+        {{ content }}
     </div>
     {% for workitem in page.workitems %}
     <div role="tabpanel" class="tab-pane" id="{{ workitem.name }}">
@@ -35,6 +35,7 @@ mg: true
         <p class="lead">{{ workitem.description }}</p>
         <h6>What's left?</h6>
         <p>{{ workitem.remaining | markdownify }}</p>
+        <h6>Notes</h6>
         <p>{{ workitem.notes | markdownify }}</p>
 
     </div>
@@ -43,4 +44,4 @@ mg: true
 
 </div>
 
-{{ content }}
+
