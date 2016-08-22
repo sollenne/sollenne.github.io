@@ -71,9 +71,15 @@
         <li><a href="#">Link</a></li>
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sprints <i class="ion-arrow-down-b"></i></a>
+
             <ul class="dropdown-menu">
-                <li><a href="#">sprint list</a></li>
+                {% assign sprints = site.mg %}
+                {% for sprint in sprints %}
+                    <li><a class="post-link" href="{{ sprint.url | prepend: site.baseurl }}">{{ sprint.title }}</a></li>
+                {% endfor %}
             </ul>
+
+
         </li>
     </ul>
 </div><!-- /.navbar-collapse -->
