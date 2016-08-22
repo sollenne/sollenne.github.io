@@ -37,28 +37,22 @@ workitems:
         .
 
     - name: MGS-1672
-      status: In Development
+      status: Closed
       description: "D2/US-Staging-Inactive modal is repeating twice"
       remaining: >
         ```
-            • Change the timeout to make this display in under 30 minutes
-            • Test it and get info from @Radhika and @Neeha as to when it's REALLY happening    
+            • CLOSED        
         ```
       notes: >
-        I tested this one for several hours in multiple situations and was never able to reproduce.
+        I tested this one for several hours in multiple situations and was never able to reproduce.    
+            
+        The way I'm testing today is changing the timeout values in `mgoConfig.json`.    
+        This didn't work the first time. I'm rebuilding to see if that works.
+        Closed officially. It looks like the test modal was put there for test resolution but it's a non blocker.
 ---
 
 <!--NOTES PANEL-->
 
 <div class="notes">
-    
-
-    <!-- Target -->                                       
-    <textarea id="bar">Mussum ipsum cacilds...</textarea> 
-                                                          
-    <!-- Trigger -->                                      
-    <button class="clip" data-clipboard-target="#bar">    
-        Cut to clipboard                                  
-    </button>
-
+    notes go here
 </div>  

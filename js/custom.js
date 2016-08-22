@@ -1,5 +1,10 @@
 $(document).ready(function() {
-    new Clipboard('.clip');
+    var clipboard = new Clipboard('.clip');
+
+    clipboard.on('success', function(e) {
+        toastr.success(e.text + ' copied to your clipboard!');
+        e.clearSelection();
+    });
 
     // open all external links in new window
     $('a').each(function() {
@@ -91,11 +96,6 @@ $(document).ready(function() {
         }
     }, 100);
 
-    SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json',
-    });
 
     $('#my-menu').css({'display':''});
 
@@ -105,6 +105,10 @@ $(document).ready(function() {
 
     $('#searchModal').on('shown.bs.modal', function () {
         $('#searchModal').find('input').focus();
+    });
+
+    $(document).on('click', '.data-modal-btn', function() {
+        $('#dataModal').appendTo("body");
     });
 
     var equalheight;

@@ -14,6 +14,13 @@
 
 {% include core/google_analytics.html %}
 
+{% if page.mg %}
+    <!--include mg stuff here-->
+    <script src="/js/toastr.js"></script>
+{% else %}
+    <script src="/js/jekyll_search.js"></script>
+{% endif %}
+
 
 <!-- CUSTOM -->
 <script src="/js/custom.js"></script>
