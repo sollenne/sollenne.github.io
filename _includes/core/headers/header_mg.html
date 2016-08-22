@@ -75,7 +75,7 @@
             <ul class="dropdown-menu">
                 {% assign sprints = site.mg %}
                 {% for sprint in sprints %}
-                    <li><a class="post-link" href="{{ sprint.url | prepend: site.baseurl }}">{{ sprint.title }}</a></li>
+                    <li><a class="post-link" href="{{ sprint.url | prepend: site.baseurl }}">Sprint {{ sprint.sprint }}</a></li>
                 {% endfor %}
             </ul>
 

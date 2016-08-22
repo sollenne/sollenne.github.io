@@ -2,40 +2,51 @@
 layout: mg_sprints
 mg: true
 sprint: 50
+workitems:
+    - name: MGS-1504
+      status: In Development
+      description: "[TECHNICAL] Deep Dive w/ Red Team on US Staging Codebase (in anticipation of production release)"
+      notes: >
+        ###### What's left?
+            • Go through and find what I need from each section
+            • Create list of what's left
+
+    - name: MGS-1762
+      status: Ready For QA
+      description: "Switch screen animation not always going the correct direction"
+      notes: >
+        ###### What's Left?
+            • Make sure this has been deployed
+
+    - name: MGS-1670
+      status: Closed
+      description: "Q2: Mobile Device:iOS/Android: User is not able to select the agent locations given at the bottom as the scroll is not working in mobile devices."
+      notes: >
+        ###### What's left?
+            • Nothing. This one should be CLOSED
+
+    - name: MGS-1672
+      status: In Development
+      description: "D2/US-Staging-Inactive modal is repeating twice"
+      notes: >
+        ###### What's left?
+            • Change the timeout to make this display in under 30 minutes
+            • Test it and get info from @Radhika and @Neeha as to when it's REALLY happening
 ---
 
-<div>
+<!--NOTES PANEL-->
+{% contentfor notes-panel %}
 
-    <!-- Target -->
-    <textarea id="bar">Mussum ipsum cacilds...</textarea>
+<!-- Target -->
+<textarea id="bar">Mussum ipsum cacilds...</textarea>
 
-    <!-- Trigger -->
-    <button class="clip" data-clipboard-target="#bar">
-        Cut to clipboard
-    </button>
+<!-- Trigger -->
+<button class="clip" data-clipboard-target="#bar">
+    Cut to clipboard
+</button>
 
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#1504" aria-controls="1504" role="tab" data-toggle="tab">MGS-1504</a></li>
-        <li role="presentation"><a href="#1762" aria-controls="1762" role="tab" data-toggle="tab">MGS-1762</a></li>
-        <li role="presentation"><a href="#1279" aria-controls="1279" role="tab" data-toggle="tab">MGS-1279</a></li>
-    </ul>
+{% endcontentfor %}
 
-    <!-- Tab panes -->
-    <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="1504">
-            <a target="_blank" href="https://mgonline.atlassian.net/browse/MGS-1504"><h2>MGS-1504 - [TECHNICAL] Deep Dive w/ Red Team on US Staging Codebase (in anticipation of production release)</h2></a>
-            <hr>
-            <a class="btn btn-primary" target="_blank" href="https://mgonline.atlassian.net/wiki/pages/viewpage.action?pageId=78840139">Confluence Link</a>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="1762">
-            <a target="_blank" href="https://mgonline.atlassian.net/browse/MGS-1762"><h2>MGS-1762 - Switch screen animation not always going the correct direction</h2></a>
-            <hr>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="1279">
-            <a target="_blank" href="https://mgonline.atlassian.net/browse/MGS-1279"><h2>MGS-1279 - US Staging Pay Bills Transaction Info Page</h2></a>
-            <hr>
-        </div>
-    </div>
-
-</div>
+{% contentfor testpanel %}
+ test
+{% endcontentfor %}

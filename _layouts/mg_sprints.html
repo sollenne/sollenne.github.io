@@ -3,10 +3,42 @@ layout: mg_layout
 mg: true
 ---
 
+
 <h1>Sprint {{ page.sprint }}</h1>
 <hr>
 
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#notes" aria-controls="notes" role="tab" data-toggle="tab">Notes</a></li>
+    {% for workitem in page.workitems %}
+    <li role="presentation"><a href="#{{ workitem.name }}" aria-controls="{{ workitem.name }}" role="tab" data-toggle="tab">
+        {% if workitem.status == 'Closed' %}
+            <s>{{ workitem.name }}</s>
+        {% else %}
+            {{ workitem.name }}
+        {% endif %}
+        </a></li>
+    {% endfor %}
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="notes">
+        <br>
+        <h4>Sprint {{ page.sprint }} Notes</h4>
+        {% contentblock notes-panel %}
+    </div>
+    {% for workitem in page.workitems %}
+    <div role="tabpanel" class="tab-pane" id="{{ workitem.name }}">
+        <br>
+        <h4><a target="_blank" href="https://mgonline.atlassian.net/browse/{{ workitem.name }}">{{ workitem.name }}</a> - {{ workitem.status }}</h4>
+        <p class="lead">{{ workitem.description }}</p>
+        <p>{{ workitem.notes | markdownify }}</p>
+
+    </div>
+    {% endfor %}
+
+
+</div>
 
 {{ content }}
-
-
